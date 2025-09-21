@@ -1,0 +1,173 @@
+/* =================================================================
+   Optimized Header Styles & Animations
+================================================================= */
+
+/* --- Keyframes --- */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* --- Header Container --- */
+.qvd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+  animation: slideDown 0.6s ease-out;
+}
+
+.qvd-header:hover {
+  box-shadow: 0 4px 20px rgba(74, 144, 226, 0.15);
+}
+
+/* --- Brand/Logo --- */
+.qvd-navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.qvd-navbar-brand:hover {
+  transform: scale(1.02);
+}
+
+.qvd-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qvd-logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #4a90e2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.qvd-navbar-brand:hover .qvd-logo-icon {
+  transform: rotate(15deg);
+  background-color: #357abd;
+}
+
+.qvd-logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  color: #4a90e2;
+  transition: color 0.3s ease;
+}
+
+.qvd-navbar-brand:hover .qvd-logo-text {
+  color: #357abd;
+}
+
+.qvd-tagline {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: -5px;
+}
+
+/* --- Navigation Links --- */
+.qvd-nav .nav-link,
+.qvd-nav .nav-link.active,
+.qvd-nav .dropdown-toggle {
+  color: #343a40 !important; /* Ensure text is visible */
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  animation: fadeInRight 0.6s ease-out both;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.qvd-nav .nav-link:hover,
+.qvd-nav .dropdown-toggle:hover {
+  color: #4a90e2 !important;
+}
+
+/* Underline effect on hover */
+.qvd-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #4a90e2;
+  transition: width 0.3s ease;
+}
+
+.qvd-nav .nav-link:hover::after {
+  width: 80%;
+}
+
+/* Staggered animation for nav items */
+.qvd-nav > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.qvd-nav > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.qvd-nav > *:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.qvd-nav > *:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.qvd-nav > *:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* --- Responsive --- */
+@media (max-width: 991.98px) {
+  .qvd-nav .nav-link,
+  .qvd-nav .dropdown-toggle {
+    padding-left: 0;
+  }
+  .qvd-nav .nav-link::after {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .qvd-logo-text {
+    font-size: 22px;
+  }
+  .qvd-logo-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}

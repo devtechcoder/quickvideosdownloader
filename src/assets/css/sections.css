@@ -1,0 +1,257 @@
+/* =================================================================
+   Additional Page Sections
+================================================================= */
+
+/* --- Why Our Process is Better Section --- */
+.process-section {
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Light gray background to make cards stand out */
+}
+
+.process-stats-card {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.process-stats-card .headding {
+  margin-bottom: 40px;
+}
+
+.process-stats-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(74, 144, 226, 0.15);
+}
+
+.process-stat-item {
+  position: relative;
+}
+
+/* Add dividers between items on larger screens */
+@media (min-width: 768px) {
+  .process-stat-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 1px;
+    background-color: #e9ecef;
+  }
+}
+
+.stat-card-value {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: #4a90e2;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.stat-card-label {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* --- Platform Selection Section --- */
+.platform-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.platform-section .headding {
+  margin-bottom: 60px;
+}
+
+.platform-grid {
+  perspective: 1500px;
+}
+
+.platform-col {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.platform-card {
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  background-color: #fff;
+  height: 100%;
+  text-align: center;
+  transition: box-shadow 0.5s ease;
+}
+
+.platform-grid:hover .platform-col {
+  transform: rotateY(-15deg) translateX(-15%);
+}
+
+.platform-col:hover {
+  transform: rotateY(0) translateX(0) scale(1.1) !important;
+  z-index: 10;
+}
+
+.platform-col:hover .platform-card {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.platform-col:hover ~ .platform-col {
+  transform: rotateY(15deg) translateX(15%);
+}
+
+.platform-card-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.platform-col:hover .platform-card-icon {
+  transform: scale(1.1);
+}
+
+.platform-card-name {
+  font-weight: 700;
+  color: #343a40;
+}
+
+/* --- Why Choose Section --- */
+.why-choose-section {
+  padding: 80px 0;
+}
+
+.why-choose-section .headding {
+  margin-bottom: 50px;
+}
+
+.feature-card {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card .anticon {
+  font-size: 48px;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+.feature-card h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* --- How to Download Videos (Cards) Section --- */
+.how-to-cards-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.how-to-cards-section .section-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: -10px auto 60px auto;
+  line-height: 1.6;
+}
+
+.how-to-card {
+  background: #f0f2f5;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #e9ecef;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.how-to-card:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale3d(1.05, 1.05, 1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.how-to-card-number {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  font-weight: 800;
+  color: #e9ecef;
+  z-index: 0;
+  line-height: 1;
+  user-select: none;
+}
+
+.how-to-card-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(74, 144, 226, 0.15);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.how-to-card-icon {
+  font-size: 36px;
+  color: #4a90e2;
+}
+
+.how-to-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.how-to-card-description {
+  color: #6c757d;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.how-to-card-col {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .how-to-card-col:not(:last-child)::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23999999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='12 5 19 12 12 19'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+  }
+}

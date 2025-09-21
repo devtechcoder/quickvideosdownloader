@@ -1,0 +1,227 @@
+/* Modern Hero Section Styles */
+.main-hero-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ffffff" stop-opacity="0.1"/><stop offset="100%" stop-color="%23ffffff" stop-opacity="0"/></radialGradient></defs><circle cx="500" cy="500" r="400" fill="url(%23a)"/></svg>');
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Left side content styling */
+.left-bar-slaide {
+  animation: fadeInUp 1s ease-out;
+}
+
+.left-bar-slaide h6 {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.left-bar-slaide h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.left-bar-slaide h2:hover {
+  transform: scale(1.02);
+}
+
+/* Download buttons styling */
+.logo-android {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-android div {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo-android div:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.logo-android img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo-android a:hover img {
+  transform: scale(1.1);
+}
+
+/* Right side image styling */
+.right-bar-slide {
+  animation: fadeInRight 1s ease-out 0.3s both;
+  transform: perspective(1000px) rotateY(-5deg);
+}
+
+.right-bar-slide img {
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: rotate(5deg);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.right-bar-slide img:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Floating elements */
+.main-hero-bg .floating-element-1 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.main-hero-bg .floating-element-2 {
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-hero-bg {
+    min-height: 100vh;
+    padding: 50px 0;
+  }
+
+  .left-bar-slaide h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .logo-android {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .right-bar-slide {
+    transform: none;
+    margin-top: 30px;
+  }
+
+  .right-bar-slide img {
+    transform: none;
+    max-width: 300px;
+  }
+
+  .floating-element-1,
+  .floating-element-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-bar-slaide h2 {
+    font-size: 1.5rem;
+  }
+
+  .logo-android {
+    gap: 15px;
+  }
+
+  .logo-android div {
+    padding: 8px;
+  }
+
+  .logo-android img {
+    width: 30px;
+    height: 30px;
+  }
+}

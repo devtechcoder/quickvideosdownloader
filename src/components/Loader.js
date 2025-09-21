@@ -1,0 +1,25 @@
+import { Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
+
+const antIcon = (
+    <LoadingOutlined
+        style={{
+            fontSize: 42,
+            color: `#fff`,
+        }}
+        spin
+    />
+);
+
+const Loader = () => {
+    return (
+        // <div className="spin_loader">
+        //     <Spin indicator={antIcon} />
+        // </div>
+        <Spin tip="Loading" size="large">
+        {/* {content} */}
+      </Spin>
+    )
+}
+
+export default Loader

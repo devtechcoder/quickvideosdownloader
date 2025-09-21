@@ -1,0 +1,4176 @@
+ @media screen and (min-width: 1399.98px) {
+
+     .header-container {
+         max-width: 1686px;
+         width: 100%;
+     }
+
+     .headerSearch {
+         max-width: 350px;
+         width: 100%;
+         min-width: 650px;
+     }
+
+ }
+
+ @media screen and (max-width: 1399.98px) {
+    .hdr-img-inner.hdr-img-inner-23 img{
+        height: 600px !important;
+    }
+    .headerSearch.d-none.d-lg-block input.form-control {
+        margin-right: 20px;
+    }
+     .gallery-main-img_2 {
+         grid-template-columns: repeat(4, 1fr);
+     }
+
+     .business-hours h2,
+     .about-page-main h2,
+     .Social-links h2 {
+         font-size: 23px;
+         line-height: 22px;
+         font-weight: 500;
+         margin: 0;
+         padding-bottom: 15px;
+     }
+
+     .main-divv-bggg img {
+         width: 100%;
+         height: 500px;
+         object-fit: cover;
+     }
+
+     .headerResultOuter {
+         max-width: 450px !important;
+         width: 100%;
+     }
+
+     .headerSearch {
+         max-width: 350px;
+         width: 100%;
+         min-width: 450px;
+     }
+
+     .abouut-us-txxt h4 {
+         font-size: 22px;
+         font-weight: 500 !important;
+         line-height: 35px;
+         color: #0d2444;
+         word-spacing: 0px;
+     }
+
+     .remamber-img img {
+         width: 32px !important;
+         height: 32px !important;
+     }
+
+
+     form.send_massage button {
+         width: 40px;
+         height: 36px;
+     }
+
+
+
+     .add-to-event-my img {
+         height: 24px;
+     }
+
+     .abouut-us-txxt {
+         padding-right: 40px;
+         text-align: justify;
+     }
+
+     .for-q_pagess p {
+         font-size: 15px;
+         line-height: 25px;
+         font-weight: 400;
+         margin: 0;
+         padding-bottom: 6px;
+     }
+
+
+     .quotation-sub ol.main-oll li {
+         font-size: 16px;
+         line-height: 20px;
+         font-weight: 400;
+     }
+
+     .main-quotation-detailss.accordion-body p {
+         font-size: 17px;
+         line-height: 25px;
+         font-weight: 500;
+         text-align: justify;
+     }
+
+     .pdf-main img {
+         width: 50px;
+     }
+
+
+
+     .main-quotation-detailss .add-to-event-my button {
+         height: 55px;
+     }
+
+     .main-quotation-detailss .masspge-main-dic {
+         width: 60px;
+         height: 55px;
+         background: #021C3F;
+         border-radius: 11px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+
+
+     .rqtxt-5.seerviice {
+         width: 50%;
+     }
+
+     section.request-bag {
+         margin-top: -125px;
+     }
+
+     .reveives-sec a {
+         font-size: 24px;
+     }
+
+     .star-imgg h2 {
+         font-size: 20px;
+     }
+
+     .star-imgg img {
+         width: 20px;
+         height: 20px;
+     }
+
+
+     .fiturs-btn h2 {
+        font-size: 25px;
+    }
+
+     .Offerings-img .main-accor-div {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-nav-list {
+         width: 100%;
+     }
+
+     .jwellers--txt-mmain-img img {
+         width: 180px;
+         height: 180px;
+     }
+
+     .jwellers--txt-mmain {
+         gap: 35px;
+     }
+
+
+
+     .jwellers--txt-mmain-img-txt h1 {
+         font-size: 26px;
+         padding-bottom: 6px;
+         line-height: 28px;
+     }
+
+     .for-like-share {
+         width: 160px;
+         height: 64px;
+     }
+
+     .main-2div-all {
+         width: 260px !important;
+     }
+
+
+
+
+
+     .baccolor select.form-select {
+         font-size: 12px !important;
+         padding: 10px;
+     }
+
+     .manager h6 {
+         font-size: 14px;
+     }
+
+     .catter-maain-divvv {
+         padding: 15px 0px 10px;
+     }
+
+     .service-img {
+         border-radius: 20px !important;
+     }
+
+     .service-img img {
+         border-radius: 20px !important;
+     }
+
+     .cat-taxxts h4 {
+         font-size: 25px;
+         font-weight: 600;
+         line-height: 35px;
+         padding-bottom: 15px;
+         margin: 0;
+     }
+
+     .main-img p {
+         max-width: 85%;
+         font-size: 12px;
+         line-height: 22px;
+         text-align: justify;
+     }
+
+     .invt-text p {
+         font-size: 23px;
+         line-height: 34px;
+         max-width: 600px;
+     }
+
+     .invt-img img {
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .abouut-us-txxt h3 {
+         font-size: 51px;
+         font-weight: 600;
+         line-height: 70px;
+         margin: 0;
+         padding-bottom: 10px;
+         color: #0d2444;
+     }
+
+     .invt-img {
+         padding: 20px;
+     }
+
+     .abouut-us-txxt p {
+         font-size: 18px;
+         font-weight: 400;
+         line-height: 30px;
+     }
+
+     .owl-cl .live-txt h3 {
+         font-size: 100px;
+         line-height: 101px;
+         margin: 0;
+     }
+
+
+
+     .booking-list li div p {
+         width: 100%;
+     }
+
+     .like-logo {
+         width: 160px;
+         height: 65px;
+     }
+
+     .service-text {
+         max-width: 300px;
+     }
+
+     .massage-text {
+        max-width: 200.73px;
+        height: 60px;
+    }
+
+
+     .service-text a {
+         font-size: 30px;
+         line-height: 40px;
+     }
+
+     .download-page h3 {
+         font-size: 38px;
+         line-height: 48px;
+         margin: 0px;
+     }
+
+     .download-page p {
+         font-size: 15px;
+         line-height: 30px;
+         padding-top: 10px;
+         width: 100%;
+     }
+
+     .d-flex .form-control.me-2 {
+         width: 100% !important;
+         max-width: 420px;
+     }
+
+     .category_main {
+
+         overflow-x: scroll;
+         overflow-y: hidden;
+     }
+
+     .occasions-main {
+         padding: 15px;
+         background: white;
+         border-radius: 8px;
+     }
+
+     .wedding-text {
+         height: 100%;
+         place-content: center;
+         padding: 22px 17.11px 22px 17.11px;
+         border-radius: 10px 0px 0px 10px;
+         color: white;
+         display: grid;
+     }
+
+     .owl-cl .live-txt h5 {
+        font-size: 50px;
+        line-height: 50px;
+        font-weight: 600;
+    }
+
+     .owl-cl .live-txt p {
+         font-size: 33px;
+         line-height: 38px;
+         font-weight: 400;
+         color: #ffffffbf;
+     }
+
+     .owl-cl .carousel-item::before {
+         height: 150px;
+     }
+
+     .service_img_main {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 20px;
+     }
+
+     .invt-text h5 {
+         font-size: 55px;
+     }
+
+     .invt-text button {
+         width: 220px;
+         height: 50px;
+     }
+
+     .mail-box h4 {
+         font-size: 30px;
+         line-height: 50px;
+     }
+     .new-main-class-of-all-gallery { 
+        gap: 10px; 
+    }
+    .new-main-class-of-all-gallery img {
+        max-width: 100px;
+        width: 100%;
+        height: 100px;
+        border-radius: 10px !important;
+    }
+ }
+
+
+ @media screen and (max-width: 1199.98px) {
+    .hdr-img-inner.hdr-img-inner-23 img{
+        height: 500px !important;
+    }
+
+
+    .main-banner-img22 img {
+        width: 100% !important;
+        max-height: 800px !important;
+        height: 100%;
+        min-height: 600px;
+    }
+    .list-main-innfor {
+        justify-content: space-between;
+    }
+    .remamber-img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+     .hdr-img-upper img {
+         bottom: 0px;
+     }
+
+     .hdr-img-inner img {
+         height: 510px !important;
+     }
+
+     .main-divv-bggg img {
+         height: 500px;
+     }
+
+     .account-prof-mg {
+         flex: 0 0 30%;
+         text-align: center;
+     }
+
+     .list-main-innfor h3 {
+         font-size: 16px;
+         line-height: 22px;
+         width: fit-content;
+         flex: unset;
+     }
+
+     .list-main-innfor h5 {
+         font-size: 16px;
+         line-height: 22px;
+         flex: unset;
+     }
+
+     .list-main-innfor {
+         gap: 24px;
+     }
+
+     .faverate-servicess {
+         padding: 0px;
+     }
+
+     .ant-tabs-tabpane {
+         padding: 20px 10px;
+     }
+
+
+
+     .owl-cl .carousel-caption {
+         top: 105px !important;
+     }
+
+     .navbar-nav {
+         gap: 45px !important;
+     }
+
+     .abouut-us-txxt h4 {
+         font-size: 20px;
+         font-weight: 500 !important;
+         line-height: 28px;
+         color: #0d2444;
+         word-spacing: 0px !important;
+     }
+
+     .remamber-txt-2 h2 {
+         font-size: 22px;
+         line-height: 24px;
+         font-weight: 500;
+         margin: 0;
+     }
+
+     .remamber-txt-2 {
+         padding-bottom: 5px;
+     }
+
+     .mark-as-done {
+         font-size: 17px;
+         line-height: 20px;
+     }
+
+     .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab {
+         font-size: 25px;
+     }
+
+     .remamber-para {
+         font-size: 16px;
+         color: #515b7c;
+         line-height: 22px;
+         font-weight: 400;
+         padding-bottom: 6px;
+     }
+
+
+
+     .subcatergor {
+         padding: 17px 0px;
+     }
+
+
+
+     .add-to-event-my button img {
+         width: 25px;
+         height: 25px;
+     }
+
+     .for-q_pagess p {
+         text-align: justify;
+     }
+
+     .quotation-sub-price h2 {
+         font-size: 22px;
+         line-height: 40px;
+         font-weight: 600;
+         margin: 0;
+         margin-top: 5px;
+     }
+
+     .quotation-sub ol.main-oll {
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     .rqtxt-1 p {
+         font-size: 15px;
+     }
+
+     .request-img-bg {
+         height: 400px !important;
+     }
+
+     .offer-txt h3 {
+         font-size: 14px;
+     }
+
+     .main-accor-div .accordion {
+         width: 466px;
+     }
+
+     section.request-bag {
+         margin-top: -95px;
+     }
+
+     .jwellers--txt-mmain-img img {
+         width: 150px;
+         height: 150px;
+     }
+
+
+     .main-2div-all {
+         z-index: 200;
+         position: absolute;
+         top: 135px;
+     }
+
+     .main-1div-all {
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         gap: 0px;
+         padding-top: 20px;
+     }
+
+     .result-and-shot-div {
+         padding: 10px 0px;
+     }
+
+     .main-2div-all {
+         width: 225px !important;
+     }
+
+     ul.navbar-nav.ms-auto.mb-2.mb-lg-0 {
+         align-items: center;
+     }
+
+     section.tabbs-section {
+         padding-top: 20px;
+         padding-bottom: 40px;
+     }
+
+     section.galllery-sec {
+         padding: 30px 0px;
+     }
+
+
+     .invt-text p {
+         font-size: 20px;
+         line-height: 30px;
+         max-width: 450px;
+     }
+
+     .invt-text {
+         width: 100%;
+     }
+
+     .invt-text h5 {
+         font-size: 50px;
+         margin: 10px;
+     }
+
+
+
+
+     .abouut-us-txxt {
+         padding-right: 50px;
+         text-align: justify;
+     }
+
+     .abouut-us-txxt p {
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 28px;
+     }
+
+     .abouut-us-txxt h3 {
+         font-size: 50px;
+     }
+
+
+     .owl-cl .live-txt h5 {
+         margin: 0;
+     }
+
+     button.bookk-btm {
+         width: fit-content;
+         height: 40px;
+         margin-top: 15px;
+         padding: 0px 10px;
+     }
+
+     .owl-cl .live-txt h3 {
+         font-size: 80px;
+         line-height: 80px;
+     }
+
+     .owl-cl .live-txt p {
+         font-size: 31px;
+         line-height: 38px;
+         padding: 0;
+     }
+
+     .navbar-nav {
+         gap: 5px;
+     }
+
+     .offers-main-1 {
+         gap: 15px;
+     }
+
+     .offers-main-1 {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .nav-link {
+         font-size: 14px !important;
+     }
+
+     .header-button-main1 {
+         gap: 10px;
+     }
+
+     .left-bar-slaide h6 {
+         font-size: 44px;
+     }
+
+     .groth h2 {
+         font-size: 30px;
+     }
+
+     .groth h4 {
+         font-size: 20px;
+     }
+
+     .download-page h3 {
+         font-size: 33px;
+         line-height: 40px;
+     }
+
+     .download-page p {
+         font-size: 15px;
+         width: 100%;
+     }
+
+     .slaider-btn a img {
+         width: 160px;
+         height: 43px;
+     }
+
+     .headding h4 {
+         font-size: 38px !important;
+         line-height: 45px !important;
+     }
+
+     .gmail-box-1 {
+         width: 100%;
+     }
+
+     .booking-list h2 {
+         font-size: 17px;
+         margin-bottom: 5px;
+         line-height: 26px;
+     }
+
+     .booking-list li div p {
+         font-size: 13px;
+     }
+
+     .headding span {
+         font-size: 20px;
+         line-height: 30px;
+     }
+
+     section.booking-section {
+         padding: 80px 0px;
+     }
+
+     .groth-main {
+         padding: 80px 0px;
+     }
+
+     .main-img p {
+         font-size: 12px;
+         line-height: 24px;
+     }
+
+     .main-img h4 {
+         font-size: 18px;
+     }
+
+     .main-img h6 {
+         font-size: 13px;
+         font-weight: 400;
+     }
+
+     .tophead h3 {
+         font-size: 38px;
+         line-height: 50px;
+     }
+
+     .tophead p {
+         font-size: 17px;
+         font-weight: 400;
+         line-height: 35px;
+         padding-bottom: 0px;
+         margin: 8px 0px;
+     }
+
+     .containerni .mb-3 {
+         margin-bottom: 15px !important;
+     }
+
+     .Occasions_text h4 {
+         font-size: 22px;
+         line-height: 18px;
+     }
+
+     .catergories_text a,
+     .Occasions_text a {
+         font-size: 17px;
+         line-height: 18px;
+     }
+
+     .occasions-main {
+         padding: 7px;
+     }
+
+     .occation-texxt h3 {
+         bottom: 1px;
+         left: 6px;
+     }
+
+     .occation-texxt h3 {
+         font-size: 14px;
+     }
+
+     .engagement-owl p {
+         font-size: 25px;
+         font-weight: 400;
+     }
+
+     .engagement-owl h5 {
+         font-size: 25px;
+         line-height: 30px;
+     }
+
+     .engagement-owl h4 {
+         font-size: 18px;
+         line-height: 29px;
+         font-weight: 600;
+     }
+
+     .engagement-owl button {
+         width: 150px;
+         height: 53px;
+     }
+
+     .engagement-owl button a {
+         font-size: 20px;
+         line-height: 24px;
+     }
+
+     .occasions-main_2 button.owl-dot {
+         width: 14px;
+         height: 14px;
+     }
+
+     .occasions-main_2 button.owl-dot.active,
+     .occasions-main_2.Wedding button.owl-dot.active {
+         width: 18px;
+         height: 18px;
+     }
+
+     .wedding-text h4 {
+         font-size: 25px;
+         line-height: 30px;
+     }
+
+     .wedding-text p {
+         font-size: 18px;
+         line-height: 29px;
+         font-weight: 500;
+     }
+
+     .wedding-text button {
+         width: 150px;
+         height: 53.6px;
+     }
+
+     .wedding-text button a {
+         line-height: 26px;
+         font-size: 18px;
+     }
+
+     .main-quotation-detailss input[type="text"] {
+         font-size: 16px;
+         line-height: 26px;
+     }
+
+     .main-quotation-detailss form.search-butnn button img {
+         width: 23px;
+         height: 23px;
+     }
+
+     .main-quotation-detailss form.search-butnn {
+         background: #f6f7fb;
+         box-shadow: 0px 0px 56.35px 0px #d3d1d840;
+         border-radius: 10px;
+         padding: 16px 19px;
+         display: flex;
+         align-items: center;
+         margin-bottom: 24px;
+         height: 50px;
+     }
+
+ }
+
+ @media screen and (max-width: 991.98px) {
+    .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn { 
+        font-size: 14px;
+    }
+    .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-tab { 
+        font-size: 14px; 
+    }
+    .offer-img.offer-img-offer-img-new img { 
+        max-width: 200px;
+        min-height: 200px;
+        flex: 0 0 200px; 
+        border-radius: 10px !important; 
+    }
+    .new-main-class-of-all-gallery img {
+        max-width: 75px;
+        width: 100%;
+        height: 75px;
+        border-radius: 10px !important;
+    }
+    .headerSearch {
+        max-width: 350px;
+        width: 100%;
+        min-width: 100%;
+    }
+    .model-form-main-1 button.ant-btn.ant-btn-primary.float-right {
+        height: 47px;
+        border-radius: 12px;
+    }
+    .model-form-main-1 form#verify-otp {
+        padding: 0px 50px;
+    }
+    h4.modal_title_cls {
+        font-size: 20px;
+    }
+    h4.modal_title_cls img {
+        width: 50px;
+        height: 50px;
+    }
+    .model-form-main-1 form.ant-form.ant-form-vertical.row-col {
+        padding-top: 20px;
+    }
+    form#forget-pasword {
+        padding: 0px 30px;
+    }
+    .login-name {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 15px;
+    }
+    .model-form-main-1 .ant-col.ant-form-item-control{
+        margin: 0px;
+    }
+    .model-form-main-1 a#remember a {
+        font-size: 16px;
+    }
+    .login-name span {
+        font-size: 27px;
+    }
+    .login-name img {
+        width: 50px;
+        height: 50px;
+    }
+    .main-banner-img22 img {
+        width: 100% !important;
+        height: 500px !important;
+        min-height: 500px ;
+    }
+    button.ant-btn.ant-btn-default.notifiaction-buttin-main img {
+        width: 25px;
+        height: 25px;
+    }
+    span.active_notification.active_notification-999 {
+        position: absolute !important;
+        background: red;
+        width: 16px;
+        height: 16px;
+        top: -3px;
+        right: -1px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        line-height: 14px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .privecy-main-discription-1 {
+        padding-left: 0px;
+        padding-top: 40px;
+        border-radius: 20px 20px 0px 0px !important;
+    }
+    .remamber-img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+     .event-list-budget {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .headerResultOuter {
+         max-width: 690px !important;
+         width: 100% !important;
+     }
+
+     .headerSearch.d-lg-none.headerSearch-responsive {
+         width: 100% !important;
+         min-width: 100%;
+         margin-top: 10px;
+     }
+
+     input#headerSearch {
+         padding-left: 50px !important;
+     }
+
+     .hdr-img-inner.hdr-img-inner-23 img {
+         height: 100% !important;
+         max-height: 420px !important;
+         opacity: 50%;
+     }
+
+     .hdr-img-upper img {
+         bottom: -1px;
+     }
+
+     .live-txt h4 {
+         font-size: 50px;
+     }
+
+     .navbar-expand-lg .navbar-nav {
+         flex-direction: column !important;
+         display: flex;
+         justify-content: center !important;
+         align-items: center;
+         gap: 12px !important;
+     }
+
+     .jweelers-cart-main {
+         padding: 10px 40px 0px;
+     }
+
+     .notificationDropdownMain button,
+     button.ant-btn.ant-btn-default.quotation-icons {
+         height: 35px;
+         width: 35px;
+     }
+
+     .quotation-sub-img img.ant-image-img {
+         max-width: 90px;
+         height: 90px;
+         flex: 0 0 90px;
+     }
+
+     .urdu-txt {
+         font-size: 14px;
+         line-height: 18px;
+         font-weight: 500;
+     }
+
+     span.navbar-brand img {
+         width: 50px;
+     }
+
+     .ant-tabs.ant-tabs-top.category-tab .ant-tabs-nav {
+         margin-bottom: 0px !important;
+     }
+     .country-wrap.country-wrapmain-sam { 
+        margin-right: 7px;
+    }
+     .ant-tabs.ant-tabs-top.category-tab .ant-tabs-tab.ant-tabs-tab-active {
+         font-size: 16px;
+     }
+     .main-add-new-event-bttnn button p {
+        font-size: 24px; 
+        line-height: 18px;
+        padding-top: 18px; 
+    }
+
+     .amt-auto {
+         padding: 0px 10px;
+         margin: 0;
+     }
+
+     .sidehide {
+         -webkit-transform: translateX(-100%);
+         transform: translateX(-100%);
+         display: none;
+         transition: -webkit-transform .3s;
+         transition: transform .3s;
+         transition: transform .3s, -webkit-transform .3s;
+     }
+
+     .sideshow {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+         display: block;
+         transition: -webkit-transform .3s;
+         transition: transform .3s;
+         transition: transform .3s, -webkit-transform .3s;
+     }
+
+     .fillter-sidebar a {
+         background-color: #062550;
+         padding: 10px;
+         border-radius: 10px;
+     }
+
+     .fillter-sidebar {
+         display: block;
+     }
+
+     .my-pro-page h1 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+     .rateing-ss {
+         position: unset;
+     }
+
+     .abouut-us-txxt h4 {
+         font-size: 22px;
+         font-weight: 500 !important;
+         line-height: 32px;
+         color: #0d2444;
+         word-spacing: 0px !important;
+     }
+
+     .remamber-txt-2 h2 {
+         font-size: 20px;
+         line-height: 20px;
+         font-weight: 500;
+         margin: 0;
+     }
+
+     .mark-as-done {
+         font-size: 15px;
+         line-height: 18px;
+     }
+
+     .remamber-txt-2 p {
+         font-size: 15px;
+         line-height: 18px;
+     }
+
+     .measage-img-maan {
+         width: 70px !important;
+         height: 70px;
+     }
+
+
+
+
+
+     .time-mass span {
+         width: 28px;
+         height: 28px;
+         font-size: 14px;
+         line-height: 22px;
+     }
+
+
+
+     .remamber-para {
+         font-size: 14px;
+         color: #515b7c;
+         line-height: 18px;
+         font-weight: 400;
+         padding-bottom: 5px;
+     }
+
+     .remamber-img img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+     .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+         font-size: 23px;
+         font-weight: 500;
+         line-height: 18px;
+         color: #F2C230 !important;
+     }
+     .ant-tabs.ant-tabs-top.message-min {
+        border-radius: 12px !important;
+    }
+     .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab {
+         padding: 15px 0px;
+         font-size: 23px;
+     }
+
+     .reveives-sec img {
+         rotate: -90deg;
+         padding: 0px 16px;
+         width: 47px;
+     }
+
+     .ant-tabs-tab.ant-tabs-tab-active {
+         border-radius: 15px;
+     }
+
+     .for-fllx p {
+         color: white;
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 20px;
+         width: 100%;
+         padding-top: 10px;
+     }
+
+     .add-to-event-my button img {
+         width: 21px;
+         height: 21px;
+     }
+
+     .main-quotation-detailss .add-to-event-my button span {
+         font-size: 16px;
+     }
+
+     .masspge-main-dic img {
+        width: 30px;
+        flex: 0 0 30px;
+    }
+
+     .main-quotation-detailss .masspge-main-dic {
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+    }
+
+     .main-quotation-detailss .add-to-event-my {
+         padding: 5px 10px;
+     }
+
+     .main-quotation-detailss .add-to-event-my button {
+         height: 40px;
+     }
+
+
+
+     .for-q_pagess p {
+         font-size: 13px;
+         line-height: 22px;
+         font-weight: 400;
+         margin: 0;
+         padding-bottom: 3px;
+     }
+
+     .quotation-sub ol.main-oll {
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     .quotation-sub ol.main-oll li {
+         font-size: 14px;
+         line-height: 20px;
+         font-weight: 400;
+     }
+
+     .quotation-sub-price h2 {
+         font-size: 18px;
+         line-height: 40px;
+         font-weight: 600;
+         margin: 0;
+         margin-top: 2px;
+     }
+
+     .quotation-sub-txt p {
+         font-size: 18px;
+         line-height: 28px;
+         font-weight: 400;
+         color: #757575;
+     }
+
+     .quotation-sub-txt h6 {
+         font-size: 20px;
+         line-height: 34px;
+         margin: 0;
+         font-weight: 400;
+         padding-bottom: 0px;
+     }
+
+     .quotation-sub-txt h4 {
+         font-size: 18px;
+         line-height: 35px;
+         font-weight: 600;
+         padding-bottom: 0px;
+         margin: 0;
+     }
+
+     .quotation-sub-2 {
+         gap: 5px;
+         flex-wrap: wrap;
+     }
+
+     .quotation-sub-price {
+         flex: 0 0 25%;
+     }
+
+     .main-quotation-detailss {
+         margin-top: 20px;
+         border-radius: 10px;
+         padding: 10px;
+     }
+
+     .request-img-bg {
+         height: 350px !important;
+     }
+
+     .request-q-form {
+         background: white;
+         padding: 25px;
+         border-radius: 40px;
+     }
+
+     select.form-select.rqtxxt {
+         height: 50px;
+         padding: 0px 46px !important;
+         background-position: right 50px center;
+         background-size: 20px;
+         font-size: 20px;
+         font-weight: 500;
+         color: #062550;
+         background-color: #f6f7fb;
+         border: none;
+         border-radius: 20px;
+         margin-bottom: 43px;
+         opacity: 50%;
+     }
+
+     .rqtxt-5.seerviice {
+         width: 100%;
+     }
+
+     .rqtxt-7.seerviice .input-group-text {
+         height: 50px;
+     }
+
+     .rqtxt-9.seerviice textarea#floatingTextarea2 {
+         height: 200px !important;
+     }
+
+     .rqtxt-10 label {
+         height: 170px;
+     }
+
+     .requesta-quote {
+         margin-top: 20px;
+         margin-bottom: 10px;
+     }
+
+     section.request-write-page {
+         border-radius: 38px;
+     }
+
+     section.request-bag {
+         border-radius: 38px 38px 0px 0px;
+     }
+
+     .check-button.maaain label {
+         font-size: 22px;
+         font-weight: 500;
+         line-height: 27px;
+         color: black;
+         padding-left: 20px;
+     }
+
+     .check-button.maaain .form-check-input[type="checkbox"] {
+         border-radius: 4px;
+         width: 26px;
+         height: 26px;
+         margin: 0;
+     }
+
+     .rqtxt-1 h2 {
+         font-size: 25px;
+         font-weight: 600;
+         line-height: 31px;
+         margin: 0;
+         padding-bottom: 5px;
+     }
+
+     .rqtxt-1 {
+         margin-bottom: 25px;
+     }
+
+
+
+     .fiturs-btn h2 {
+         font-size: 20px;
+     }
+
+     .fiturs-btn {
+         max-width: 140px;
+         height: 50px;
+         border-radius: 20px 20px 0px 0px;
+         top: -50px;
+     }
+
+     .for-like-share {
+         width: 130px;
+         height: 50px;
+     }
+
+     .for-like-share img {
+         width: 30px;
+     }
+
+     .massage-text a img {
+         padding-right: 10px;
+         width: 30px;
+     }
+
+     .massage-text a {
+         font-size: 16px;
+     }
+
+     .massage-text {
+         max-width: 138px;
+         height: 55px;
+     }
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-nav-list {
+         height: 45px;
+     }
+
+
+
+     .jwellers--txt-mmain {
+         flex-wrap: wrap;
+     }
+
+     .jwellers--txt-mmain-img-txt h1 {
+         font-size: 22px;
+     }
+
+     .jwellers--txt-mmain-img-txt p {
+         font-size: 14px;
+         padding: 0px 0px;
+         padding-bottom: 6px;
+     }
+
+     .reveives-sec a {
+         font-size: 20px;
+     }
+
+     .star-imgg h2 {
+         font-size: 18px;
+         line-height: 18px;
+     }
+
+     .star-imgg img {
+         width: 20px;
+         height: 20px;
+     }
+
+     .star-imgg {
+         gap: 6px;
+     }
+
+
+
+
+     .Social-Links-logo img {
+         height: 22px;
+         width: 22px;
+     }
+
+     ul.sunday li p {
+         margin: 0px;
+         font-size: 14px;
+         line-height: 18px;
+     }
+
+     .business-hours ul.sunday li {
+         padding-bottom: 12px;
+         gap: 30px;
+     }
+
+     .Social-links h2 {
+         font-size: 20px;
+         line-height: 22px;
+     }
+
+     .email-img img {
+         width: 18px;
+         height: 18px;
+         flex: 0 0 18px;
+     }
+
+     .email-img h3 {
+         margin: 0;
+         font-size: 18px;
+         line-height: 20px;
+     }
+
+     .email-img {
+         gap: 13px;
+     }
+
+     .subcatergor {
+         padding: 20px 0px;
+     }
+
+     .location-main {
+         padding-bottom: 15px;
+     }
+
+     .location-txt p {
+         font-size: 18px;
+         line-height: 22px;
+     }
+
+     .location-txt h2 {
+         font-size: 14px;
+         line-height: 18px;
+         padding-bottom: 5px;
+     }
+
+     .location-img {
+         width: 35px;
+         height: 35px;
+         margin: 0;
+     }
+
+     .location-img img {
+         width: 17px;
+         height: 20px;
+     }
+
+     .business-hours,
+     .Social-links,
+     .about-page-main,.details-maain-text,.events-name-tt {
+         padding: 10px ;
+     }
+
+     .about-page-main h2 {
+         font-size: 20px;
+         line-height: 22px;
+     }
+
+     .business-hours h2 {
+         font-size: 20px;
+         line-height: 22px;
+     }
+
+     .about-page-main p {
+         font-size: 14px;
+         line-height: 25px;
+         font-weight: 400;
+         margin: 0;
+         text-align: justify;
+     }
+
+     .requesta-quote {
+         margin-top: 35px;
+         margin-bottom: 0px;
+     }
+
+
+
+     .request-bag .accordion-body ul li {
+         font-size: 13px;
+         padding: 4px 8px;
+     }
+
+     .offer-button button {
+         height: 45px;
+     }
+
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .accordion-button::after {
+         right: 22px;
+         bottom: 19px;
+     }
+
+
+
+
+     .offer-txt h3 {
+         font-size: 12px;
+         margin: 0;
+         line-height: 19px;
+     }
+
+     .offers-main {
+         padding: 10px;
+         align-items: flex-start;
+     }
+
+
+
+     .main-accor-div .accordion {
+         width: 348px;
+     }
+
+
+
+     section.galllery-sec {
+         padding: 30px 0px;
+     }
+
+
+     .abouut-uss-main {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+
+
+     .abouut-us-txxt p {
+         font-size: 21px;
+         font-weight: 400;
+         line-height: 40px;
+     }
+
+     .abouut-us-txxt {
+         order: 2;
+         padding: 0;
+         padding-top: 10px;
+     }
+
+     .abouut-us-img {
+         order: 1;
+     }
+
+     .carousel-indicators [data-bs-target] {
+         width: 12px !important;
+         height: 12px !important;
+     }
+
+     .wedding-text h6 {
+         line-height: 40px;
+         font-size: 25px;
+         font-weight: 500;
+     }
+
+     .from-main {
+         grid-template-columns: repeat(1, 1fr);
+         gap: 10px;
+     }
+
+
+     /* .owl-cl .carousel-caption {
+        position: absolute;
+        right: 60px;
+        bottom: -30px !important;
+        left: 150px;
+        padding-top: 0;
+        padding-bottom: 0.25rem;
+        color: #fff;
+        text-align: center;
+    } */
+
+
+     .live-img img {
+         width: 100% !important;
+         height: 100% !important;
+     }
+
+     ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
+         gap: 20px;
+     }
+
+     .navbar-toggler-icon {
+         filter: invert(1);
+     }
+
+     .carousel-indicators .active {
+         width: 17px !important;
+         height: 17px !important;
+     }
+
+     .category_main {
+         gap: 10px;
+     }
+
+     .carousel-indicators {
+         margin-bottom: 60px;
+     }
+
+     .invt-text h5 {
+         font-size: 45px;
+         line-height: 45px;
+     }
+
+     .invt-text p {
+         font-size: 16px;
+         line-height: 25px;
+     }
+
+     .invt-text button {
+         width: 200px;
+         height: 40px;
+     }
+
+     .invt-text button a {
+         font-size: 20px;
+     }
+
+     .service-img img {
+         width: 100%;
+     }
+
+
+
+
+     .service_img_main {
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     .gmail-box-1 {
+         width: 314px;
+
+     }
+
+     .bar {
+         width: 120px;
+     }
+
+     .owl-cl .live-txt h5 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+     .home-page-header {
+         padding: 10px 0px;
+     }
+
+     ul.list2 li p {
+         font-size: 14px;
+         line-height: 22px;
+         width: 100%;
+     }
+
+     ul.list2 li h1 {
+         font-size: 18px;
+         line-height: 18px;
+         padding-bottom: 10px;
+     }
+
+     .logo-img4 img {
+         width: 50px;
+     }
+
+     .gmail-box-1 button.ant-btn.ant-btn-default {
+         font-size: 11px;
+         line-height: 18px;
+     }
+
+     .model-form-main-1 input#email,
+     .model-form-main-1 span.ant-input-affix-wrapper.ant-input-password,
+     .ant-form-item-control-input-content input,
+     .ant-form-item.username.ant-form-item-has-success .ant-picker.ant-picker-status-success,
+     .ant-form-item.username.ant-form-item-has-success .ant-select-selector,
+     .react-tel-input .form-control {
+         font-size: 12px;
+         line-height: 18px;
+     }
+
+
+
+     .gmail-box-1 {
+         width: 100%;
+     }
+
+     .owl-cl .carousel-item::before {
+         height: 140px;
+     }
+
+     .owl-cl .live-txt p {
+         font-size: 18px;
+         line-height: 20px;
+     }
+
+     ul.list2 li a {
+         font-size: 12px;
+         line-height: 18px;
+     }
+
+     .mail-box h4 {
+         font-size: 35px;
+         line-height: 45px;
+     }
+
+     .navbar-collapse.collapse.show {
+         right: 0 !important;
+         transition: .5s;
+     }
+
+     li.nav-item {
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         border-bottom: 1px solid #ffffff36 !important;
+         padding: 15px 0px;
+     }
+
+     li.nav-item:last-child {
+         border: none !important;
+         justify-content: center;
+         padding-top: 15px;
+     }
+
+
+     .left-bar-slaide h6 {
+         font-size: 30px;
+         line-height: 38px;
+     }
+
+     .left-bar-slaide h2 {
+         font-size: 14px;
+         line-height: 24px;
+     }
+
+     .slaider-btn {
+         padding-top: 10px;
+     }
+
+     .groth h2 {
+         font-size: 25px;
+     }
+
+     .groth h4 {
+         font-size: 20px;
+         font-weight: 400;
+     }
+
+     .groth::after {
+         height: 89px;
+     }
+
+     .groth img {
+         width: 70px;
+         height: 70px;
+     }
+
+     .download-page h3 {
+         font-size: 28px;
+         line-height: 35px;
+     }
+
+     .download-page p {
+         font-size: 13px;
+         line-height: 21px;
+     }
+
+
+     section.download-bg {
+         padding-top: 40px !important;
+     }
+
+     .main-hero-bg {
+         padding-bottom: 40px;
+         padding-top: 40px;
+     }
+
+     .slaider-btn a img {
+         width: 140px;
+         height: 41px;
+     }
+
+
+     section.choose-us {
+         padding-bottom: 20px;
+         margin-bottom: 40px;
+     }
+
+     .book-right {
+         margin-top: 20px;
+     }
+
+     .testimonial-sec {
+         padding-bottom: 40px;
+         padding-top: 40px;
+     }
+
+     section.faq-section {
+         padding: 40px 0px;
+     }
+
+     .gmail-box-1 {
+         padding-left: 0px;
+     }
+
+
+     .container.for-width {
+         padding-bottom: 0px !important;
+
+     }
+
+     .phone-img-inner {
+         padding-top: 20px;
+     }
+
+     .booking-list li div p {
+         font-size: 12px;
+         line-height: 20px;
+     }
+
+     .booking-list h2 {
+         font-size: 13px;
+     }
+
+     .booking-list li {
+         gap: 3px;
+     }
+
+     .book-right button.btn-first {
+         margin: 0 auto;
+     }
+
+     .teext2 h4 {
+         font-size: 33px;
+     }
+
+     .main-img p {
+         font-size: 10px;
+         line-height: 21px;
+     }
+
+
+     .dropdown-menu[data-bs-popper] {
+         top: 75% !important;
+         left: -37px !important;
+     }
+
+     .navbar-nav .dropdown-menu {
+         position: absolute !important;
+     }
+
+     .report-button {
+         margin-top: 18px;
+     }
+ }
+
+
+ @media screen and (max-width: 767.98px) {
+    .event-happy-emoji.emogi-event img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .noevent-text.noheadding h2 {
+        font-size: 22px; 
+        padding-bottom: 8px;
+    }
+    .noevent-text.noheadding p {
+        font-size: 17px; 
+        padding-bottom: 24px; 
+    }
+    .noevent-text button {
+        max-width: 250px; 
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 30px; 
+    }
+    .venue-cost { 
+        display: flex;
+        align-items: baseline;
+        gap: 7px;
+    }
+    span.ant-collapse-header-text h2 { 
+        font-size: 16px !important; 
+    }
+    .venue-lalsion {
+        padding: 10px 10px 10px 10px; 
+        margin-bottom: 15px; 
+    }
+    .venie-m-txt h3 {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+    .venie-m-txt h2 {
+        font-size: 16px; 
+    }
+    .venue-cost p {
+        font-size: 16px;
+        line-height: 18px; 
+    }
+    .venue-cost h3 {
+        font-size: 14px;
+        line-height: 20px; 
+    }
+    .vensu-teext.vensu-teext-667 {
+        margin-top: 10px;
+    }
+    .venue-lalsion-1 { 
+        flex-wrap: wrap;
+    }
+    .main-eve-listed h5 {
+        font-size: 14px;
+    }
+    .main-eve-listed {
+        padding-bottom: 12px;
+    }
+    .vensu-teext.vensu-teext-667 ul li img {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+    }
+    .vensu-teext.vensu-teext-667 ul { 
+        gap: 10px; 
+    }
+    .add-items-1 img {
+        width: 18px;
+        height: 18px;
+    }
+    .add-items-1 button h3 {
+        font-size: 16px;
+        line-height: 18px; 
+    }
+    .add-price {
+        font-size: 16px;
+        line-height: 18px; 
+    }
+    .no.service-page {
+        font-size: 18px;
+        line-height: 16px; 
+        padding: 10px 0px; 
+    }
+    .offers-details {
+        flex: 0 0 100%;
+    }
+    .offers-main.offers-main-main-876 {
+        flex-wrap: wrap;
+    }
+    .main-new-button-all-div {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .ant-tabs-tab {
+        margin-left: 10px !important;
+    }
+    .userImg {
+        flex: 0 0 45px;
+    }
+    .userImg .ant-image img {
+        width: 45px;
+        height: 45px; 
+    }
+    .ant-tabs.ant-tabs-top.budget-main-hddr button.accordion-button h2 {
+        font-size: 16px;
+        margin-left: 45px;
+    }
+    .right-header-menu{
+        gap: 10px;
+    }
+    .ant-modal.tab_modal.second-modal.main-three form#reset-password {
+        padding: 0px 25px;
+    }
+    .ant-modal.main-model_imgg1 .ant-modal-content {
+        border-radius: 30px;
+    }
+    .model-form-main-1 {
+        padding: 40px 100px;
+    }
+    .main-banner-img22 img {
+        width: 100% !important;
+        height: 400px !important;
+        min-height: 400px;
+    }
+    .ant-tabs.ant-tabs-top.budget-main-hddr .ant-tabs-tab {
+        padding: 17px 0px;
+    }
+    .gmail-box input#email, .gmail-box-1 input#email {
+        padding: 0px 10px;
+    }
+    .main-notification-of-content {
+        font-size: 14px;
+        line-height: 18px;
+        word-break: break-all;
+        padding-right: 15px;
+        font-weight: 500;
+    }
+    .accout-main-44 {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .remamber-main {
+        padding: 10px 10px;
+    }
+    .main-profilr-fff {
+        text-align: center;
+    }
+    .main-service-page-55588 {
+        gap: 45px;
+    }
+    .result-msin-divv h4 {
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 500;
+        color: #686868;
+        margin: 0;
+    }
+    .result-and-shot-div {
+        display: flex;
+        width: 100% !important;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+     .short-by-div .ant-select-selector {
+         height: 40px !important;
+         width: 125px !important;
+     }
+
+     .result-msin-divv {
+         padding-left: 0px;
+     }
+
+     .headerResultOuter {
+         max-width: 515px !important;
+         width: 100% !important;
+     }
+
+     .owl-cl .carousel-caption {
+         top: 40px !important;
+     }
+
+     .owl-cl .live-txt h5 {
+         font-size: 45px;
+         line-height: 45px;
+         font-weight: 600;
+         padding-bottom: 8px;
+     }
+
+     .hdr-img-inner.hdr-img-inner-23 img {
+         height: 100% !important;
+         max-height: 370px !important;
+     }
+
+     .live-txt h4 {
+         font-size: 40px;
+         padding-bottom: 10px;
+         line-height: 55px;
+     }
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+         font-size: 14px;
+     }
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-tab {
+        font-size: 14px;
+        padding: 0px 8px;
+    }
+
+     .model-form-main-1 form.ant-form.ant-form-vertical.row-col {
+         padding: 20px 20px;
+     }
+
+     .model-form-main-1 {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .model-img {
+         display: none;
+     }
+
+     .account-prof-mg {
+         flex: 0 0 100%;
+     }
+     .edit-iconee {
+        right: 40%;
+    }
+
+     .list-rettings ul.ant-list-items {
+         grid-template-columns: repeat(1, 1fr);
+     }
+
+     .abt-us {
+         padding: 30px 0px;
+     }
+
+     .abouut-us-txxt h4 {
+         font-size: 21px;
+         font-weight: 500 !important;
+         line-height: 32px;
+         color: #0d2444;
+     }
+
+     .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 18px;
+         color: #F2C230 !important;
+     }
+
+     .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab {
+         padding: 16px 0px;
+     }
+
+     .for-like-share img {
+         width: 25px;
+         height: 33px;
+     }
+
+     .remamber-img img {
+         width: 100% !important;
+         height: 30px !important;
+     }
+
+
+     .remamber-main {
+         margin-top: 15px;
+     }
+
+     .time-mass h3 {
+         color: #8f8f8f;
+         font-size: 14px;
+         line-height: 18px;
+         font-weight: 500;
+         margin: 0;
+         padding-bottom: 8px;
+     }
+
+     .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab {
+         font-size: 20px;
+     }
+
+     .main-accor-div .accordion {
+         width: 514px !important;
+     }
+
+     .jwellers--txt-mmain-img {
+         top: -80px;
+     }
+
+     .jwellers--txt-mmain {
+         gap: 63px;
+         margin-bottom: 18px;
+     }
+
+     section.request-bag {
+         margin-top: -15px;
+     }
+
+     .email-img h3 {
+         font-size: 14px;
+         line-height: 18px;
+     }
+
+     .for-like-share {
+         width: 130px;
+         height: 50px;
+         right: 130px;
+         border-radius: 12px;
+     }
+
+     .for-like-share img {
+         height: 35px;
+     }
+
+     .service-backg img {
+         height: 300px;
+     }
+
+     .service-backg {
+         position: relative;
+         height: 100%;
+     }
+
+     .main-quotation-detailss form.search-butnn {
+         background: #f6f7fb;
+         box-shadow: 0px 0px 56.35px 0px #d3d1d840;
+         border-radius: 20px;
+         padding: 7px 25px;
+         display: flex;
+         align-items: center;
+         margin-bottom: 10px;
+         height: 50px;
+     }
+
+     .main-quotation-detailss input[type="text"] {
+         border: none;
+         background: none;
+         margin-left: 12px;
+         font-size: 18px;
+         line-height: 25px;
+         font-weight: 400;
+     }
+
+     .pdf-main img {
+         width: 35px;
+     }
+
+     .for-q_pagess p {
+         font-size: 11px;
+         line-height: 19px;
+         font-weight: 400;
+         margin: 0;
+         padding-bottom: 5px;
+     }
+
+     .main-quotation-detailss form.search-butnn button img {
+         border: none !important;
+         /* background: none; */
+         width: 20px;
+         height: 20px;
+     }
+
+     .quotation-sub ol.main-oll {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px;
+        margin-top: 0px !important;
+    }
+
+     .quotation-sub ol.main-oll li {
+         font-size: 13px;
+         line-height: 20px;
+         font-weight: 400;
+     }
+
+     .quotation-sub-1 {
+         margin-bottom: 0px;
+     }
+
+     .add-to-event-my img {
+         height: 24px;
+         width: 24px;
+     }
+
+     .main-quotation-detailss .accordion-header {
+         border-radius: 0px !important;
+     }
+
+     .quotation-sub-price h2 {
+         font-size: 18px;
+         line-height: 25px;
+         font-weight: 600;
+         margin: 0;
+         margin-top: 0px;
+     }
+
+     .quotation-sub-txt p {
+         font-size: 16px;
+         line-height: 28px;
+         font-weight: 400;
+         color: #757575;
+     }
+
+     .quotation-sub-txt h6 {
+         font-size: 16px;
+         line-height: 25px;
+         margin: 0;
+         font-weight: 400;
+         padding-bottom: 0px;
+     }
+
+     .quotation-sub-img img {
+         width: 75px;
+     }
+
+     .quotation-sub-txt h4 {
+         font-size: 16px;
+         line-height: 20px;
+     }
+
+     .rqtxt-7.seerviice .form-check-input[type="radio"] {
+         width: 25px;
+         height: 25px;
+     }
+
+     .rqtxt-9.seerviice textarea#floatingTextarea2 {
+         height: 150px !important;
+     }
+
+     .rqtxt-10 label {
+         height: 150px;
+     }
+
+     #file-image {
+         display: inline;
+         margin: 0 auto 0.5rem auto;
+         /* width: auto; */
+         /* height: auto; */
+         width: 70px;
+     }
+
+
+     select.form-select.rqtxxt {
+         height: 49px;
+         padding: 0px 25px !important;
+         background-position: right 25px center;
+         background-size: 14px;
+         font-size: 15px;
+         font-weight: 500;
+         color: #062550;
+         background-color: #f6f7fb;
+         border: none;
+         border-radius: 20px;
+         margin-bottom: 43px;
+         opacity: 50%;
+     }
+
+     .seerviice h2 {
+         font-size: 18px;
+         font-weight: 500;
+         line-height: 18px;
+         padding-bottom: 15px;
+         margin: 0px;
+     }
+
+     .requ-teext-mm h2 {
+         margin: 0;
+         font-size: 41px;
+         font-weight: 600;
+         line-height: 41px;
+         color: white;
+         z-index: 200;
+         padding-bottom: 70px;
+     }
+
+     .rqtxt-1 p {
+         font-size: 14px;
+     }
+
+     .request-img-bg {
+         height: 250px !important;
+     }
+
+     .gallery-main-img_2 {
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     .Offerings-img .main-accor-div {
+         grid-template-columns: repeat(1, 1fr);
+         width: 100%;
+     }
+
+     .main-accor-div .accordion {
+         width: 100%;
+     }
+
+     .jwellers--txt-mmain-img-txt p {
+         font-size: 14px;
+         padding: 0px 0px;
+     }
+
+     .massage-text {
+         max-width: 130.73px;
+         height: 50px;
+     }
+
+     .for-like-share img {
+         width: 30px;
+         height: 30px;
+     }
+
+     .heart-image span {
+         font-size: 22px;
+     }
+
+     .headding.text-center {
+         padding: 20px 0px;
+     }
+
+     .headding h4 {
+         padding-bottom: 20px;
+     }
+
+     .headding span {
+         font-size: 16px;
+     }
+
+     section.bg-img2 .form-11 {
+         border-radius: 22px;
+     }
+
+     .businesswomenimg img {
+         border-radius: 22px;
+     }
+
+     .teext2 p {
+         font-size: 16px;
+         padding-bottom: 20px;
+     }
+
+     section.bg-img2 {
+         padding: 40px 0px;
+     }
+
+     section.invt_bg {
+         max-height: 100%;
+         padding: 30px 0px 0px;
+     }
+
+     .occasions-main_2.Wedding h2 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
+
+     .abouut-us-txxt h3 {
+         font-size: 28px;
+         line-height: normal;
+     }
+
+     .abouut-us-txxt p {
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 22px;
+         margin-bottom: 0px;
+     }
+
+
+
+     .ant-tabs.ant-tabs-top.category-tab .ant-tabs-tab.ant-tabs-tab-active {
+         font-size: 15px !important;
+         height: 40px;
+     }
+
+     .ant-tabs.ant-tabs-top.category-tab .ant-tabs-tab {
+         width: 100px;
+         font-size: 15px;
+     }
+
+
+
+     .owl-cl .live-txt h3 {
+         font-size: 60px;
+         line-height: 80px;
+     }
+
+     /* 
+     .owl-cl .carousel-caption {
+         top: 5px !important;
+     } */
+
+     .container.for-width .accordion-body { 
+        font-size: 13px; 
+        font-weight: 500; 
+        padding: 0px 10px;
+        padding-bottom: 10px; 
+    }
+     .invt-img {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding-top: 40px;
+     }
+
+     .invt-text {
+         text-align: center;
+         /* padding-top: 30px; */
+     }
+
+     .logo-android {
+         justify-content: left;
+     }
+
+     /* .invt-text button {
+        margin: 0 auto;
+    } */
+
+     .container.for-width {
+         padding-bottom: 30px;
+         /* padding-top: 30px; */
+     }
+
+     ul.list2.subscribe-1 {
+         padding: 40px 0px !important;
+     }
+
+     ul.list2 li p {
+         width: 100%;
+     }
+
+     ul.list2 li h1 {
+         padding-bottom: 5px;
+     }
+
+     .copy {
+         text-align: center;
+     }
+
+     ul.list3 {
+         justify-content: center;
+         margin-bottom: 20px !important;
+     }
+
+     section.bg-img3 {
+         padding: 20px 0px 0px;
+     }
+
+     ul.list2.subscribe-1 {
+         padding-bottom: 0px !important;
+         padding-top: 30px !important;
+     }
+
+
+
+
+     .service_img_main {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .for-border {
+         padding-bottom: 10px;
+         margin-bottom: 10px;
+     }
+
+     .suggestion-img h4 {
+         bottom: 0px;
+         left: 5px;
+         font-size: 14px;
+         font-weight: 600;
+     }
+
+
+     .home-page-header {
+         height: 100%;
+         padding: 10px 0px;
+     }
+
+     a.navbar-brand img {
+         width: 55px;
+         height: 100%;
+     }
+
+     .headding-reting h6 {
+         font-size: 18px;
+         line-height: 24px;
+     }
+
+     button.ant-btn.ant-btn-primary.leave-feedback {
+         max-width: 160px;
+         height: 40px;
+         border-radius: 7px;
+         font-size: 14px;
+         line-height: 32px;
+     }
+
+     .jwellers--txt-mmain-img-txt {
+         margin-top: -115px;
+     }
+   
+
+ }
+
+ @media screen and (max-width: 575.98px) {
+    .event-happy-emoji.emogi-event img {
+        max-width: 135px !important;
+        margin-bottom: 10px !important;
+    }
+    .noevent-text.noheadding p {
+        font-size: 14px;
+        padding-bottom: 24px;
+    }
+    .venue-lalsion-1 h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .ant-form-item.filtter-select.main-new-color-attributes .ant-row.ant-form-item-row{
+        flex-wrap: wrap !important;
+        gap: 0px;
+    }
+    .ant-form-item.upload_wrap.upload_wrapmain-newww button.ant-btn.ant-btn-default {
+        width: 100% !important;
+        min-width: 250px !important;
+        border-radius: 15px !important;
+        height: 50px !important;
+    }
+    .ant-form-item.filtter-select.main-new-color-attributes div#Color {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .abouut-us-txxt {
+        padding-top: 20px;
+    }
+    .ant-select.main-bride-guest.ant-select-single.ant-select-show-arrow {
+        max-width: 195px;
+        width: 100%;
+        height: 48px !important;
+    }
+    .ant-list-bordered .ant-list-item {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .add-iemes.main-add-for-scroll {
+        padding: 10px;
+    }
+    .add-price h3 { 
+        font-size: 14px; 
+    }
+    .pricing-main { 
+        font-size: 14px;  
+    }
+    .add-iemes.main-add-for-scroll .add-items-1 {
+        margin-bottom: 10px;
+    }
+    .offer-img.offer-img-offer-img-new img {
+        max-width: 100%;
+        min-height: 100px;
+        flex: 0 0 100%; 
+    }
+    .offer-img.offer-img-offer-img-new { 
+        width: 100%;
+    }
+    .offers-details ul { 
+        gap: 5px; 
+    }
+    .provider-list-name img {
+        width: 16px;
+    }
+    .offer-button { 
+        width: 100%;
+    }
+    .main-new-button-all-div .offer-button button {
+        max-width: 220px;
+        width: 100%;
+    }
+    .new-main-class-of-all-gallery {
+        flex-wrap: wrap;
+    }
+    span.ant-modal-close-x {
+        width: 25px !important;
+        height: 25px !important; 
+    }
+    .ant-tabs.ant-tabs-top.budget-main-hddr button.accordion-button h2 {
+        font-size: 15px;
+        margin-left: 26px;
+    }
+    .main-quotation-detailss {
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 0px;
+    }
+    button.ant-btn.ant-btn-default.select-inn.main-budgut-444 {
+        width: 92px;
+        height: 37px;
+    }
+    .country-wrap.country-wrapmain-sam .ant-select-selector {
+        height: 35px !important;
+        padding: 0px 10px !important;
+        border-radius: 6px !important;
+    }
+    .country-wrap.country-wrapmain-sam {
+        min-width: fit-content;
+    }
+    .right-header-menu {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .ant-modal.noevent-model .ant-modal-content {
+        border-radius: 25px;
+    }
+    .ant-modal.tab_modal.second-modal.main-three form#reset-password {
+        padding: 0px;
+    }
+    .model-form-main-1 form#verify-otp {
+        padding: 0px 25px;
+    }
+    form#forget-pasword{
+        padding: 0px;
+    }
+    .model-form-main-1 {
+        padding: 20px 35px;
+    }
+  
+    .ant-tabs.ant-tabs-top.budget-main-hddr .ant-tabs-tab {
+        padding: 12px 0px;
+    }
+    .event-list-hdr h3 {
+        margin: 0;
+        padding: 15px 0px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+    .products-like {
+        position: absolute;
+        top: 7px;
+        width: 40px;
+        height: 40px;
+        background: #f7f7f7;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 10px;
+    }
+    .ant-tabs.ant-tabs-top.message-maaxx .ant-tabs-tab {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 43px;
+    }
+    .ant-tabs.ant-tabs-top.message-maaxx .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #F2C230;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    .ant-space.ant-space-horizontal.ant-space-align-center.main-all-export.button-h {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main-share-bttnn {
+        text-align: end;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+    .noevent-text form.ant-form.ant-form-inline {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .guest-list-divvv {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .prof-chat h4 {
+        padding: 10px 12px;
+        border-radius: 0px 15px 15px 15px;
+    }
+    .chat-box-main_2 {
+        padding: 15px;
+    }
+    .prof-chat h2 {
+        margin: 0;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+    form.send_massage .message-sending-56gga {
+        border: none;
+        width: 35px;
+        height: 35px;
+    }
+    form.send_massage {
+        height: 45px;
+    }
+    .msg-1 p {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .msg-1 h3 {
+        border-radius: 15px 0px 15px 15px;
+        background: #021c3f;
+        width: -moz-fit-content;
+        width: fit-content;
+        max-width: 50%;
+        margin: 0px;
+        margin-left: auto;
+        padding: 10px 12px;
+        color: white;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+        word-break: break-all;
+        margin-bottom: 7px;
+    }
+    .remamber-txt-2 h2 {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .remamber-para {
+        font-size: 13px;
+        color: #515b7c;
+        line-height: 14px;
+        font-weight: 400;
+        padding-bottom: 0px;
+    }
+    .main-delete-out span {
+        width: 25px;
+        height: 25px;
+        background: #021c3f;
+        color: white;
+        border-radius: 999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .remamber-txt-2 p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .remamber-main {
+        padding: 10px ;
+    }
+    p.no-quotation-3 {
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+    .modal-body.invite-frnds-maain .ant-form-item {
+        padding-bottom: 5px;
+    }
+    .modal-content.for-invt-frnd {
+        width: 100%;
+        height: 100%;
+        border-radius: 27px !important;
+        padding: 10px;
+        background: white;
+        box-shadow: 0px 5.53px 41.46px 0px #00000033;
+    }
+    .main-banner-img22 img {
+        width: 100% !important;
+        height: 250px !important;
+        min-height: 250px;
+    }
+    .for-quotation-background-3 {
+        padding: 10px;
+    }
+    .srtars-mmain-rate {
+        padding-top: 130px;
+    }
+    .modal-content.for-rate-store {
+        height: 600px;
+    }
+    .ant-col.submit-button-maain.ant-col-md-24.ant-col-xl-24 {
+        padding-top: 5px;
+    }
+    .coment-main-2 {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .rateing-ss {
+        position: absolute !important;
+        text-align: center;
+        bottom: -152px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+    }
+    .start-immg-star img {
+        height: 200px;
+        width: 100%;
+    }
+    .header-model-maiai {
+        height: 170px;
+        background: #021C3F;
+        position: relative;
+    }
+
+    .short-by-div .ant-select-selector {
+        height: 33px !important;
+        width: 90px !important;
+    }
+    .main-service-page-55588 {
+        gap: 20px;
+    }
+     .jweelers-cart-main {
+         padding: 10px 10px 0px;
+     }
+
+     .list-main-innfor {
+         gap: 16px;
+         justify-content: space-between;
+     }
+
+     .main-profilr-fff {
+         position: relative;
+         width: 100%;
+         text-align: center;
+     }
+
+     .main-profilr-fff .ant-image img.ant-image-img {
+         border-radius: 50%;
+         overflow: hidden;
+         width: 140px;
+         height: 140px;
+         max-width: 140px;
+     }
+
+     .edit-iconee {
+         left: 60%;
+         right: 0;
+     }
+
+     .jwellers--txt-mmain-img-txt {
+         margin-top: -30px;
+     }
+
+     .owl-cl .carousel-caption {
+         top: 14px !important;
+     }
+
+     .hdr-img-inner.hdr-img-inner-23 img {
+         height: 100% !important;
+         max-height: 210px !important;
+     }
+
+     .carousel-indicators {
+         margin-bottom: 30px;
+     }
+
+     
+     span.ant-select-selection-item {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+     .owl-cl .live-txt h5 {
+         font-size: 30px;
+         line-height: 32px;
+         padding-bottom: 0px;
+     }
+
+     .owl-cl .live-txt p {
+         font-size: 18px;
+         line-height: 20px;
+         color: #ffffffad;
+     }
+
+     .live-txt h4 {
+         font-size: 25px;
+         font-weight: 600;
+         line-height: 40px;
+         margin: 0;
+         color: white;
+         padding-bottom: 0px;
+     }
+
+
+     .live-txt h4 {
+         font-size: 26px;
+         font-weight: 600;
+         line-height: 65px;
+         margin: 0;
+         color: white;
+         padding-bottom: 1px;
+     }
+
+     h2.freq-ask-qqq.accordion-header button.accordion-button {
+         font-size: 14px;
+         padding: 10px 8px !important;
+     }
+
+     section.bg-img2 .form-11 {
+         border-radius: 22px;
+         padding: 15px;
+     }
+
+     .businesswomenimg {
+         display: none;
+     }
+
+     section.download-bg {
+         padding-top: 20px !important;
+         margin-bottom: 20px;
+     }
+
+
+     .main-accor-div .accordion {
+         width: 100% !important;
+     }
+
+     section.request-bag {
+         border-radius: 20px 20px 0px 0px;
+     }
+
+     .jwellers--txt-mmain-img {
+         width: 100px !important;
+         height: 100px !important;
+     }
+
+     .subcatergor p span {
+         font-size: 19px;
+         line-height: 26px;
+         font-weight: 400;
+     }
+
+     .about-page-main h2 {
+         font-size: 25px;
+         line-height: 30px;
+     }
+
+     .business-hours h2 {
+         font-size: 25px;
+         line-height: 30px;
+         font-weight: 500;
+         margin: 0;
+         padding-bottom: 8px;
+     }
+
+     .subcatergor p {
+         font-size: 18px;
+         line-height: 18px;
+         font-weight: 400;
+         margin: 0;
+     }
+
+     section.request-bag {
+         margin-top: -90px;
+     }
+
+     .fiturs-btn {
+         top: -39px;
+         max-width: 100px;
+         height: 39px;
+         right: 36px;
+         border-radius: 15px 15px 0px 0px;
+     }
+
+     .fiturs-btn h2 {
+         font-size: 18px;
+     }
+
+     .for-like-share {
+         width: 80px;
+         height: 35px;
+         gap: 5px;
+         border-radius: 10px;
+         right: 20px;
+         top: 4px;
+     }
+
+     .jwellers--txt-mmain-img img {
+         width: 120px !important;
+         height: 120px;
+         max-width: 120px;
+     }
+
+     .jwellers--txt-mmain {
+         gap: 0px;
+
+     }
+
+     .gallery-main-img_2 {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .for-fllx p {
+         color: white;
+         font-size: 17px;
+         font-weight: 500;
+         line-height: 27px;
+         width: 100%;
+         padding-top: 10px;
+     }
+
+     .for-border {
+         text-align: center;
+     }
+
+     section.bg-img2 {
+         padding: 40px 0px;
+     }
+
+     section.choose-us {
+         padding-bottom: 0px;
+         margin-bottom: 40px;
+     }
+
+     .headding {
+         text-align: center;
+         padding: 20px 0px;
+     }
+
+     .left-bar-slaide h2 {
+         font-size: 16px;
+         line-height: 23px;
+         text-align: center;
+     }
+
+     .left-bar-slaide h6 {
+         font-size: 31px;
+         line-height: 38px;
+         text-align: center;
+     }
+
+     .headding h4 {
+         padding-bottom: 10px;
+         text-align: center;
+     }
+
+     .logo-android {
+         justify-content: center;
+     }
+
+     .download-page p {
+         font-size: 14px;
+         line-height: 23px;
+         text-align: center;
+
+     }
+
+     .download-page h3 {
+         font-size: 32px;
+         line-height: 40px;
+         text-align: center;
+     }
+
+     ul.list2 {
+         margin-top: 20px !important;
+     }
+
+     ul.list2.subscribe-1 {
+         padding-bottom: 0px !important;
+         padding-top: 0px !important;
+     }
+
+
+
+     button.bookk-btm a {
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 20px;
+         color: black;
+     }
+
+
+
+     .owl-cl .live-txt h3 {
+         font-size: 35px;
+         line-height: 45px;
+     }
+
+     .owl-cl .live-txt h3 {
+         font-size: 35px;
+         line-height: 45px;
+     }
+ }
+
+ @media screen and (max-width: 425px) {
+    .ant-collapse-header {
+        height: 50px;
+    }
+    .abouut-us-txxt {
+        padding-top: 10px;
+    }
+    .offers-details ul li { 
+        width: 100%;
+    }
+    .ant-tabs-tabpane {
+        padding: 0px 0px;
+    }
+    .quotation-sub ol.main-oll {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .teext2 h4 {
+        font-size: 22px;
+    }
+    .remamber-1.remamber-1-mani {
+        background: white;
+        padding: 12px;
+        margin: 20px 0px;
+        border-radius: 15px;
+    }
+    .main-add-new-event-bttnn button span.anticon.anticon-plus-circle {
+        font-size: 48px;
+        color: #021c3f;
+    }
+    .main-add-new-event-bttnn button p {
+        font-size: 18px;
+        line-height: 18px;
+        padding-top: 18px;
+    }
+    .model-form-main-1 button.ant-btn.ant-btn-primary.float-right {
+        width: 100%;
+        background: #021C3F;
+        height: 40px;
+        border-radius: 12px;
+        color: #F2C230;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 19px;
+        outline: none;
+        border: 1px solid #021c3f;
+        box-shadow: none;
+    }
+    .teext2 p {
+        font-size: 14px;
+        padding-bottom: 20px;
+        font-weight: 600;
+    }
+    .model-form-main-1 form#verify-otp{
+        padding: 0px;
+    }
+    .ant-modal.main-model_imgg1 .ant-modal-content {
+        border-radius: 20px;
+    }
+    .model-form-main-1 {
+        padding: 10px 20px;
+    }
+    .ant-tabs.ant-tabs-top.message-maaxx .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #F2C230;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+    .mani-text-notification902 {
+        font-size: 20px;
+        font-weight: 600;
+        color: #021c3f;
+    }
+.ant-tabs.ant-tabs-top.message-maaxx .ant-tabs-tab {
+        height: 45px;
+    }
+    
+    .ant-tabs.ant-tabs-top.message-maaxx .ant-tabs-tab-btn {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #7A797A;
+    }
+    .privecy-main-discription-1 h3 {
+        padding-bottom: 20px;
+    }
+    .privecy-main-discription-1 {
+        padding-top: 20px;
+    }
+    .massage-text a {
+        font-size: 12px;
+    }
+    .ant-rate {
+        font-size: 15px !important;
+        width: 140px;
+    }
+    .star-imgg {
+        gap: 0px;
+    }
+    .star-imgg h2 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+   
+    .massage-text {
+        max-width: 115.73px;
+        height: 43px;
+        margin-bottom: 18px;
+    }
+    .meass-inbox-main {
+        display: flex;
+        align-items: flex-start;
+        padding: 8px;
+        border-bottom: 1px solid #ebebeb;
+        box-shadow: 0px 2px 7px 0px #0000000d;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .meas-name-tie h3 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 0;
+        padding-bottom: 8px;
+    }
+    .time-mass h3 {
+        font-size: 12px;
+    }
+
+    .meas-name-tie p {
+        font-size: 12px;
+    }
+    .time-mass span {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        line-height: 22px;
+    }
+    p.no-quotation-3 {
+        margin: 0;
+        font-size: 16px;
+        padding: 7px 0px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: center;
+    }
+    .ant-tabs.ant-tabs-top.message-maaxx .ant-tabs-tab {
+        height: 45px;
+    }
+    .for-quotation-background-3 {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .event-list-hdr h3 {
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    .remamber-txt-2 h2 {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .remamber-main {
+        padding: 7px;
+    }
+    .main-notification-of-content {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .main-delete-out span {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    button.ant-btn.ant-btn-default.dleltebutton-image-22 {
+        width: 40px;
+        height: 40px;
+    }
+    .add-sign-new {
+         width: 60px;
+        height: 60px;
+    }
+    .main-service-page-55588 {
+        gap: 5px;
+        width: 100%;
+    }
+    .result-and-shot-div {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+     .live-txt h4 {
+         line-height: 50px;
+     }
+
+     .carousel-indicators {
+         margin-bottom: 40px;
+     }
+     .mian-fvrt-ser-2 h3 {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        margin: 0;
+    }
+    .products-like {
+        position: absolute;
+        top: 7px;
+        width: 40px;
+        height: 40px;
+        background: #f7f7f7;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 5px;
+    }
+    .event-backgg-header h2 {
+        font-size: 18px;
+        line-height: 35px;
+        font-weight: 600;
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 15px;
+        word-break: break-all;
+        padding-top: 35px;
+    }
+    h2.freq-ask-neww.accordion-header button.accordion-button {
+        padding: 15px 20px;
+        color: #021C3F;
+        font-size: 13px !important;
+        line-height: 24px !important;
+        font-weight: 600 !important;
+    }
+    .prvecy-main-discription .accordion-button::after {
+        background-size: 17px;
+        width: 17px !important;
+        height: 17px !important;
+    }
+    .hdr-img-inner.hdr-img-inner-23 img {
+        height: 100% !important;
+        max-height: 180px !important;
+    }
+    .prvecy-main-discription .accordion-body p {
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #515B7C;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    .owl-cl .live-txt p {
+        font-size: 18px;
+        line-height: 20px;
+        color: #ffffffad;
+        padding-top: 18px;
+    }
+    .ant-tabs.ant-tabs-top.budget-main-hddr button.accordion-button h2 {
+        margin-left: 5px;
+    }
+    .quotation-sub-price {
+        flex: 0 0 31%;
+    }
+    .invt-text h5 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-nav-list {
+        height: 40px;
+    }
+    .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-nav-list {
+        height: 40px;
+    }
+    .venue-beffo {
+        width: 35px;
+        height: 35px;
+    }
+    .vensu-teext.vensu-teext-667 .venue-beffo img {
+        width: 17px;
+    }
+    .ant-tabs.ant-tabs-top.budget-main-hddr span.ant-collapse-header-text h1 img {
+        width: 18px;
+    }
+    .event-list-budget {
+        border-radius: 15px;
+    }
+    .budget-oo h2 span, .bud-guest h2 span {
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .budget-oo h2, .bud-guest h2 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 0;
+    }
+    button.ant-btn.ant-btn-default.dleltebutton-image-22 {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 13px;
+    }
+    button.ant-btn.ant-btn-default.dleltebutton-image-22 span.anticon.anticon-delete {
+        font-size: 15px;
+    }
+ }
+
+
+ @media screen and (max-width: 375px) {
+   
+    .abouut-us-txxt p {
+        font-size: 12px;
+    }
+    .quotation-sub ol.main-oll{
+        margin: 0px !important;
+    }
+    .ant-tabs.ant-tabs-top.budget-main-hddr button.accordion-button h2 {
+        font-size: 15px;
+        margin-left: 0;
+    }
+    .quotation-sub-price {
+        flex: 0 0 100%;
+    }
+    .main-banner-img22 img {
+        width: 100% !important;
+        height: 200px !important;
+        min-height: 200px !important;
+    }
+    .navbar-brand {
+        margin-right:0px;
+    }
+    .hdr-img-upper img {
+        bottom: 0px;
+    }
+    .ant-rate {
+        font-size: 14px;
+    }
+    .star-imgg {
+        gap: 0px;
+    }
+    .star-imgg h2 {
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 500;
+    }
+    .reveives-sec a {
+        font-size: 16px;
+    }
+    .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 15px;
+        color: #F2C230 !important;
+    }
+    .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab {
+        padding: 10px 0px;
+    }
+    .ant-tabs.ant-tabs-top.message-min .ant-tabs-tab {
+        font-size: 18px;
+    }
+    .main-quotation-detailss .pdf-main img.ant-image-img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+    p.no-quotation-3 {
+        margin: 0;
+        font-size: 18px;
+        padding: 5px 0px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+    }
+    .rateing-ss p {
+        text-wrap: balance;
+    }
+    .submit-button-mainnn button {
+        width: 100%;
+    }
+    .event-list-budget {
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 30px 30px 0px 0px;
+    }
+    .budget-and-guest {
+        padding: 15px 10px;
+    }
+    .event-backgg-header h2 {
+        font-size: 17px;
+        line-height: 26px;
+        font-weight: 700;
+        max-width: 498px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 10px;
+        padding-top: 35px;
+    }
+    .noevent-text button {
+        max-width: 554px;
+        height: 50px;
+        background: #021C3F;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 500;
+        color: #F2C230;
+        width: 100%;
+    }
+    .ant-tabs.ant-tabs-top.category-tab .ant-tabs-tab.ant-tabs-tab-active {
+        font-size: 12px !important;
+        height: 35px;
+        padding: 2px;
+        border-radius: 6px;
+    }
+
+     section.owl-cl .carousel-control-next-icon,
+     .carousel-control-prev-icon {
+         background-size: 80% 80%;
+     }
+
+     button.bookk-btm {
+         width: -moz-fit-content;
+         width: fit-content;
+         height: 35px;
+         margin-top: 10px;
+         padding: 0px 10px;
+     }
+
+     .live-txt h4 {
+         font-size: 26px;
+         font-weight: 600;
+         line-height: 40px;
+         margin: 0;
+         color: white;
+         padding-bottom: 1px;
+     }
+
+     .account-prof-mg h3,
+     .account-prof-mg h4 {
+         text-align: center;
+     }
+
+     .list-main-innfor h5 {
+         font-size: 14px;
+         line-height: 22px;
+
+     }
+
+     .list-main-innfor h3 {
+         font-size: 12px;
+         line-height: 22px;
+     }
+
+     .result-and-shot-div {
+         flex-wrap: wrap;
+     }
+
+     .right-header-menu {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+     
+     .remamber-txt-2 h2 {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        margin: 0;
+    }
+     .remamber-img img {
+         width: 30px !important;
+         height: 30px !important;
+     }
+
+     .meass-inbox-main {
+         padding: 10px;
+         gap: 10px;
+     }
+
+     .meas-name-tie h3 {
+         font-size: 18px;
+         font-weight: 500;
+         line-height: 18px;
+         margin: 0;
+         padding-bottom: 5px;
+     }
+
+     .remamber-main {
+        padding: 6px 10px;
+        border-bottom: 1px solid #ebebeb;
+        box-shadow: 0px 2px 7px 0px #0000000d;
+        background: white;
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+     .remamber-para {
+         font-size: 12px;
+         color: #515b7c;
+         line-height: 17px;
+         font-weight: 400;
+         padding-bottom: 5px;
+         text-align: justify;
+     }
+
+     .quotation-sub-1 {
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+         padding: 20px 0px;
+         text-align: center;
+     }
+
+     .main-quotation-detailss .accordion-item {
+         padding: 15px;
+     }
+
+
+
+     .main-quotation-detailss .add-to-event-my button span {
+         font-size: 11px;
+     }
+
+
+     .add-to-event-my button img {
+         width: 18px;
+         height: 18px;
+     }
+
+     .quotation-sub-2 {
+         gap: 5px;
+         flex-wrap: wrap;
+         width: 100%;
+         text-align: center;
+         display: grid;
+         place-content: center;
+     }
+
+ 
+
+     .ant-tabs-tab {
+         margin-left: 5px !important;
+     }
+     .ant-tabs.ant-tabs-top.category-tab .ant-tabs-tab { 
+        font-size: 13px;
+    }
+
+     .abouut-us-txxt {
+         order: 2;
+         padding: 0;
+         padding-top: 30px;
+     }
+
+  
+
+
+     .offer-button button {
+         width: 135px;
+         height: 45px;
+         border: none;
+         border-radius: 12px;
+     }
+
+
+     .request-bag .accordion-body ul li {
+         padding: 4px 6px;
+     }
+
+     .report-button button a {
+         font-size: 14px;
+         line-height: 24px;
+     }
+
+
+
+     .Social-links h2 {
+         font-size: 20px;
+         line-height: 26px;
+         font-weight: 500;
+         margin: 0;
+         margin-bottom: 8px;
+     }
+
+     .business-hours ul.sunday {
+         width: 100%;
+     }
+
+     .email-img h3 {
+         margin: 0;
+         font-size: 16px;
+         line-height: 20px;
+     }
+
+     .email-img img {
+         width: 18px;
+         height: 18px;
+     }
+
+     .location-txt p {
+         font-size: 16px;
+         line-height: 20px;
+     }
+
+     .location-txt h2 {
+         font-size: 16px;
+         line-height: 22px;
+         padding-bottom: 5px;
+     }
+
+     .ant-tabs-tab.ant-tabs-tab-active {
+         background: #062550;
+         border-radius: 12px;
+     }
+
+     .requ-teext-mm h2 {
+         margin: 0;
+         font-size: 30px;
+         font-weight: 600;
+         line-height: 37px;
+         color: white;
+         z-index: 200;
+         padding-bottom: 40px;
+     }
+
+     .rqtxt-1 p {
+         font-size: 13px;
+     }
+
+     .rqtxt-1 h2 {
+         font-size: 22px;
+
+     }
+
+     .check-button.maaain label {
+         font-size: 17px;
+         font-weight: 500;
+         line-height: 27px;
+         color: black;
+         padding-left: 5px;
+     }
+
+     .check-button {
+         display: flex;
+         align-items: center;
+         gap: 0px;
+     }
+
+     .dane-flr {
+         display: flex;
+         gap: 0px;
+         flex-wrap: wrap;
+     }
+
+     .rqtxt-7.seerviice {
+         display: flex;
+         gap: 10px;
+         margin-bottom: 43px;
+         flex-wrap: wrap;
+     }
+
+     .rqtxt-9 .form-floating>label {
+         top: 5px;
+         left: 17px;
+         font-size: 16px;
+         font-weight: 500;
+         color: #062550;
+         opacity: 50%;
+     }
+
+
+
+     .requesta-quote {
+         height: 45px;
+         margin-top: 25px;
+         margin-bottom: 10px;
+     }
+
+     .seerviice h2 {
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 16px;
+         padding-bottom: 15px;
+         margin: 0px;
+     }
+
+     section.request-write-page {
+         background: #f6f7fb;
+         border-radius: 50px;
+         position: relative;
+         margin-top: -92px;
+         padding-top: 27px;
+     }
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-nav-list {
+         height: 40px;
+     }
+
+     .reveives-sec img {
+         width: 45px;
+         height: 23px;
+         object-fit: cover;
+     }
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-tab {
+         font-size: 15px;
+     }
+
+     .ant-tabs.ant-tabs-top.offering-tabbs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+         font-size: 16px;
+     }
+
+     .for-like-share {
+         right: 20px;
+         top: 2px;
+     }
+
+     .fiturs-btn {
+         right: 20px;
+     }
+
+     .service-backg {
+         height: 240px;
+     }
+
+     .gallery-main-img_2 {
+         grid-template-columns: repeat(2, 1fr);
+     }
+
+     .main-accor-div .accordion {
+         width: 349px;
+     }
+
+     .jweelers-cart-main {
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 20px;
+     }
+
+
+     section.owl-cl .carousel-indicators {
+         bottom: 45px;
+     }
+
+     section.owl-cl .carousel-item {
+         position: relative !important;
+         padding-bottom: 15px;
+     }
+
+     section.tabbs-section {
+         padding-top: 0px;
+         padding-bottom: 25px;
+     }
+
+     .abouut-us-txxt p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+
+
+     ul.list2.for-res {
+         margin: 0 auto !important;
+     }
+
+
+     ul.list2 {
+         text-align: center;
+         display: grid;
+         place-content: center;
+         width: 100%;
+     }
+
+     .logo-android {
+         justify-content: center;
+     }
+
+     .for-fllx p {
+         font-size: 19px;
+         width: 303px;
+         padding-top: 22px;
+     }
+
+     .for-fllx {
+         text-align: center;
+         display: grid;
+         place-content: center;
+     }
+
+     .invt-img img {
+         width: 100%;
+         height: 100%;
+
+     }
+
+     .invt-text p {
+         font-size: 14px;
+         line-height: 27px;
+         width: 100%;
+     }
+
+     .mail-box p {
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 20px;
+         margin: 0;
+         padding-bottom: 21px;
+         color: #0d2444;
+     }
+
+     .ant-tabs.ant-tabs-top.category-tab .ant-tabs-nav {
+
+         margin: 0px;
+     }
+
+
+
+
+
+     button.bookk-btm a {
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 18px;
+         color: black;
+     }
+
+     .owl-cl .carousel-caption {
+         top: 0px !important;
+     }
+
+     .mail-box h4 {
+         font-size: 22px;
+     }
+
+     .owl-cl .live-txt h3 {
+         font-size: 29px;
+         line-height: 45px;
+         padding: 0;
+     }
+
+     button.accordion-button.faq-btn {
+         font-size: 17PX;
+     }
+
+     .gmail-box {
+         width: 100%;
+         padding-right: 6px;
+         padding-left: 7px;
+         height: 64px;
+     }
+
+     .gmail-box input {
+         margin: 0px 14px;
+         font-size: 12px;
+     }
+
+     .gmail-box button a {
+         font-size: 14px;
+     }
+
+     ul.list2 {
+         padding-top: 20px !important;
+     }
+
+     ul.list2.subscribe-1 {
+         padding-top: 8px !important;
+     }
+
+
+
+     .owl-cl .live-txt h5 {
+         font-size: 19px;
+         line-height: 19px;
+     }
+
+     .owl-cl .live-txt p {
+         font-size: 18px;
+         line-height: 17px;
+         padding-bottom: 3.25rem;
+         padding: 0;
+
+     }
+
+     .hdr-img-upper img {
+         bottom: 14px;
+     }
+
+     .hdr-img-inner.hdr-img-inner-23 img {
+         height: 100% !important;
+         max-height: 180px !important;
+     }
+
+     .live-img img {
+         width: 100px;
+         height: 100px;
+     }
+
+     .catergories_img {
+         width: 120px;
+     }
+
+     .catergories_img img {
+         border-radius: 50%;
+         width: 100px;
+     }
+
+     .occasions-img {
+         grid-template-columns: repeat(1, 1fr);
+         gap: 15px;
+     }
+
+     .occasions-main_2 .engagement-owl {
+         padding: 0 10px;
+     }
+
+
+
+
+     .engagement-owl h5 {
+         font-size: 19px;
+         line-height: 14px;
+
+     }
+
+     .engagement-owl h4 {
+         font-size: 11px;
+         line-height: 15px;
+     }
+
+     .engagement-owl button {
+         width: 113px;
+         height: 29px;
+     }
+
+     .occasions-main_2 .owl-dots {
+         bottom: -4px;
+
+     }
+
+     .engagement-owl-img img {
+         height: 255px;
+     }
+
+     .service_img_main {
+         grid-template-columns: repeat(1, 1fr);
+     }
+     .products-like {
+        position: absolute;
+        top: 5px;
+        width: 32px;
+        height: 32px;
+        background: #f7f7f7;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 5px;
+    }
+    .main-fav-b-1 span.anticon.anticon-heart {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+ @media screen and (max-width: 320px) {
+
+    .ant-tabs.ant-tabs-top.message-maaxx .ant-tabs-tab {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+    }
+     .right-header-menu {
+         gap: 3px;
+     }
+     .live-txt h4 {
+        font-size: 22px;
+    }
+
+     section.owl-cl .carousel-indicators {
+         bottom: 15px;
+     }
+
+     .hdr-img-inner.hdr-img-inner-23 img {
+         max-height: 165px !important;
+     }
+
+ }

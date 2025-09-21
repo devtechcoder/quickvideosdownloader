@@ -1,0 +1,183 @@
+/* =================================================================
+   Hero Section Styles
+================================================================= */
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: clamp(6rem, 15vh, 10rem) 1rem; /* Responsive padding */
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  margin-bottom: 30px;
+}
+
+.hero-badge span {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem); /* Responsive font size */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title .highlight {
+  color: #4facfe;
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem); /* Responsive font size */
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 auto 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+}
+
+.hero-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.hero-feature-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.hero-feature-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-feature-item .anticon {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #4facfe;
+}
+
+.hero-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 700px;
+  margin: 50px auto 0 auto;
+}
+
+.hero-stat-item {
+  transition: transform 0.3s ease;
+}
+
+.hero-stat-item:hover {
+  transform: scale(1.05);
+}
+
+.hero-stat-item .anticon {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.hero-stat-item .stat-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.hero-stat-item .stat-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 5px;
+}
+
+.hero-download-form {
+  background: rgba(255, 255, 255, 0.98);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.hero-download-form .ant-form {
+  display: flex !important; /* Override antd's default layout styles */
+  gap: 10px;
+  align-items: stretch;
+}
+
+.hero-download-form .ant-form-item {
+  flex: 1 1 auto; /* Allow input to grow */
+  margin-bottom: 0;
+}
+
+.hero-download-form .ant-form-item:last-child {
+  flex: 0 0 auto; /* Prevent button from growing */
+}
+
+.hero-download-form .ant-input-lg {
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  padding: 12px 16px;
+  height: 52px;
+}
+
+.hero-download-form .ant-btn-primary {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  transition: transform 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .hero-download-form .ant-form {
+    flex-direction: column !important;
+  }
+  .hero-download-form .ant-form-item {
+    width: 100%; /* Ensure items take full width when stacked */
+  }
+  .hero-download-form .ant-btn-primary {
+    width: 100%;
+  }
+  .hero-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
