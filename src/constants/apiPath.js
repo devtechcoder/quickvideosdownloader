@@ -1,29 +1,18 @@
 import { notification } from "antd";
 
-let appMode = process.env.REACT_APP_ENV;
-let ASSET_URL =
-  "https://api-ap-south-mum-1.openstack.acecloudhosting.com:8080/";
-let URL;
+let ASSET_URL = "https://api-ap-south-mum-1.openstack.acecloudhosting.com:8080/";
 
-console.log("appMode", appMode);
-
-// 3.20.147.34
-
-if (appMode === "development") {
-  URL = "https://backend.insave.com/api/";
-  // URL = "http://localhost:8900/api/";
-} else {
-  URL = "https://backend.insavecom/api/";
-  URL = "http://localhost:7900/api/";
-}
+// Backend server URL
+const URL = "http://localhost:5000/";
 
 let apiPath = {
   baseURL: URL,
   assetURL: ASSET_URL,
 
   // Header APIs
-
-  globalDownload: "/app/url/insta/download",
+  globalDownload: "api/download",
+  proxyDownload: "api/proxy-download",
+  proxyImage: "api/proxy-image",
   notification: "app/notification/",
 
   // Auth APIs

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Input, Button, Row, Col, Space, Collapse, Form, Checkbox } from "antd";
+import { Input, Button, Row, Col, Space, Collapse, Form, Checkbox, Card, Typography, Spin, Alert, Divider } from "antd";
 import {
   CheckCircleOutlined,
   YoutubeOutlined,
@@ -20,6 +20,7 @@ import {
   RetweetOutlined,
   LinkOutlined,
   HighlightOutlined,
+  PlayCircleOutlined,
 } from "@ant-design/icons";
 import { Link, useNavigate } from "react-router-dom";
 import { Navbar, Nav, Container, Accordion, NavDropdown } from "react-bootstrap";
@@ -66,6 +67,18 @@ const responsiveSetting = {
   },
 };
 
+function formatBytes(bytes, decimals = 2) {
+  if (!+bytes) return "";
+
+  const k = 1024;
+  const dm = decimals < 0 ? 0 : decimals;
+  const sizes = ["Bytes", "KB", "MB", "GB", "TB"];
+
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+
+  return ` - ${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
+}
+
 const { Panel } = Collapse;
 
 function LandingIndex() {
@@ -75,6 +88,8 @@ function LandingIndex() {
   const { request } = useRequest();
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
+  const [mediaInfo, setMediaInfo] = useState(null);
+  const [error, setError] = useState(null);
 
   const smoothScroll = (target) => {
     target.scrollIntoView({ behavior: "smooth" });
@@ -92,36 +107,51 @@ function LandingIndex() {
 
   const onSubmit = (values) => {
     setLoading(true);
+    setMediaInfo(null);
+    setError(null);
     const payload = {
       videoUrl: values.link,
     };
-    console.log(payload);
+
     request({
       url: `${apiPath.globalDownload}`,
       method: "POST",
       data: payload,
       onSuccess: (data) => {
-        console.log("Download initiated successfully:", data);
-        const link = document.createElement("a");
-        const fileName = decodeURIComponent(data?.downloadUrl?.media?.[0]?.url.split("/").pop());
-        const mediaUrl = data?.downloadUrl?.media?.[0]?.url;
-
-        if (mediaUrl) {
-          link.href = mediaUrl;
-          link.download = fileName;
-          link.click();
-          form.resetFields();
-        } else {
-          console.error("Download URL not found.");
-        }
         setLoading(false);
+        if (data.success) {
+          setMediaInfo(data);
+        } else {
+          setError(data.error || "Could not process the video link.");
+          ShowToast(data.error || "Could not process the video link.", Severty.ERROR);
+        }
       },
       onError: (err) => {
         setLoading(false);
-        console.error("Error during download:", err);
-        ShowToast("Invalid Link! Please try again.", Severty.ERROR);
+        const errorMessage = err?.response?.data?.error || "Invalid Link or Server Error! Please try again.";
+        setError(errorMessage);
+        ShowToast(errorMessage, Severty.ERROR);
       },
     });
+  };
+
+  const handleDownload = (url, title, format) => {
+    // हमारे बैकएंड प्रॉक्सी के लिए URL बनाएँ
+    const proxyUrl = `${apiPath.baseURL}${apiPath.proxyDownload}?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&format=${encodeURIComponent(format)}`;
+
+    // एक अस्थायी एंकर (<a>) एलिमेंट बनाएँ
+    const link = document.createElement("a");
+    link.href = proxyUrl;
+
+    // यह ब्राउज़र को बताता है कि लिंक पर क्लिक करने पर नेविगेट करने के बजाय फ़ाइल डाउनलोड करनी है।
+    // सर्वर से भेजा गया फ़ाइल नाम प्राथमिकता लेगा।
+    link.setAttribute("download", `${title || "video"}.${format}`);
+
+    // इसे डॉक्यूमेंट में जोड़ें, क्लिक करें, और फिर हटा दें।
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    ShowToast("Your download has started!", Severty.SUCCESS);
   };
 
   return (
@@ -215,7 +245,7 @@ function LandingIndex() {
                         <Input placeholder="Enter Video URL" size="large" />
                       </Form.Item>
                       <Form.Item>
-                        <Button type="primary" htmlType="submit" size="large" loading={loading}>
+                        <Button type="primary" htmlType="submit" size="large" loading={loading} disabled={loading}>
                           ▶ Process
                         </Button>
                       </Form.Item>
@@ -245,6 +275,88 @@ function LandingIndex() {
             </div>
           </div>
         </section>
+
+        {/* Loading and Results Section */}
+        {loading && (
+          <div style={{ textAlign: "center", padding: "40px 20px" }}>
+            <Spin size="large" />
+            <p style={{ marginTop: "16px", fontSize: "16px" }}>Processing your link, please wait...</p>
+          </div>
+        )}
+
+        {error && !loading && (
+          <div style={{ padding: "20px" }}>
+            <Alert message="Error" description={error} type="error" showIcon closable onClose={() => setError(null)} />
+          </div>
+        )}
+
+        {mediaInfo && !loading && (
+          <section className="results-section" style={{ padding: "40px 0", backgroundColor: "#f9fafb" }}>
+            <div className="container">
+              <Card>
+                <Row gutter={[24, 24]} align="middle">
+                  <Col xs={24} md={8}>
+                    <img
+                      // CORS समस्याओं से बचने के लिए प्रॉक्सी का उपयोग करें
+                      src={`${apiPath.baseURL}${apiPath.proxyImage}?url=${encodeURIComponent(mediaInfo.thumbnail)}`}
+                      alt={mediaInfo.title}
+                      style={{ width: "100%", borderRadius: "8px" }}
+                    />
+                  </Col>
+                  <Col xs={24} md={16}>
+                    <Typography.Title level={4}>{mediaInfo.title}</Typography.Title>
+                    <Typography.Text type="secondary">Platform: {mediaInfo.platform}</Typography.Text>
+                    {mediaInfo.media.filter((f) => f.vcodec && f.vcodec !== "none").length > 0 && (
+                      <>
+                        <Divider>Video Downloads</Divider>
+                        <Space wrap>
+                          {mediaInfo.media
+                            .filter((f) => f.vcodec && f.vcodec !== "none")
+                            .map((format, index) => (
+                              <Button key={`video-${index}`} type="primary" icon={<DownloadOutlined />} onClick={() => handleDownload(format.url, mediaInfo.title, format.format)}>
+                                {format.quality} ({format.format.toUpperCase()}){formatBytes(format.size)}
+                              </Button>
+                            ))}
+                        </Space>
+                      </>
+                    )}
+
+                    {mediaInfo.media.filter((f) => f.acodec && f.acodec !== "none" && (!f.vcodec || f.vcodec === "none")).length > 0 && (
+                      <>
+                        <Divider>Audio Downloads</Divider>
+                        <Space wrap>
+                          {mediaInfo.media
+                            .filter((f) => f.acodec && f.acodec !== "none" && (!f.vcodec || f.vcodec === "none"))
+                            .map((format, index) => (
+                              <Button key={`audio-${index}`} type="default" icon={<DownloadOutlined />} onClick={() => handleDownload(format.url, mediaInfo.title, format.format)}>
+                                {format.quality} ({format.format.toUpperCase()}){formatBytes(format.size)}
+                              </Button>
+                            ))}
+                        </Space>
+                      </>
+                    )}
+
+                    {mediaInfo.media.filter((f) => f.vcodec === "none" && f.acodec === "none").length > 0 && (
+                      <>
+                        <Divider>Image Downloads</Divider>
+                        <Space wrap>
+                          {mediaInfo.media
+                            .filter((f) => f.vcodec === "none" && f.acodec === "none")
+                            .map((format, index) => (
+                              <Button key={`image-${index}`} type="dashed" icon={<DownloadOutlined />} onClick={() => handleDownload(format.url, mediaInfo.title, format.format)}>
+                                {/* अगर एक से ज़्यादा इमेज हैं तभी नंबर दिखाएँ */}
+                                Image {mediaInfo.media.filter((f) => f.vcodec === "none" && f.acodec === "none").length > 1 ? index + 1 : ""} ({format.format.toUpperCase()}){formatBytes(format.size)}
+                              </Button>
+                            ))}
+                        </Space>
+                      </>
+                    )}
+                  </Col>
+                </Row>
+              </Card>
+            </div>
+          </section>
+        )}
 
         {/* How It Works Section */}
         <section className="how-to-cards-section">
