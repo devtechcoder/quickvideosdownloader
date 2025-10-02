@@ -255,3 +255,87 @@
     opacity: 0.7;
   }
 }
+
+/* --- Call to Action Section --- */
+.cta-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* रॉकेट के लिए एनीमेशन क्लास */
+.animated-rocket {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+  animation: float-rocket 4s ease-in-out infinite;
+}
+
+/* पुरानी क्लास से एनीमेशन हटा दें ताकि यह तुरंत शुरू न हो */
+.cta-content .anticon-rocket {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.cta-content h2 {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  animation: pulse-button 2s infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes pulse-button {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+/* --- Text Focus In Animation --- */
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* --- Logo Fix --- */
+.qvd-logo {
+  height: 70px; /* Aap isse apni zaroorat ke hisab se badal sakte hain */
+  width: auto;
+  object-fit: contain;
+}

@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Input, Button, Row, Col, Space, Collapse, Form, Checkbox, Card, Typography, Spin, Alert, Divider } from "antd";
+import React, { useState, useRef, useEffect } from "react";
+import { Input, Button, Row, Col, Space, Collapse, Form, Checkbox, Card, Typography, Spin, Alert } from "antd";
 import {
   CheckCircleOutlined,
   YoutubeOutlined,
@@ -20,14 +20,16 @@ import {
   RetweetOutlined,
   LinkOutlined,
   HighlightOutlined,
+  CopyOutlined,
+  ClearOutlined,
   PlayCircleOutlined,
+  LinkedinOutlined,
+  CustomerServiceOutlined,
+  BoldOutlined,
 } from "@ant-design/icons";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Navbar, Nav, Container, Accordion, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import OwlCarousel from "react-owl-carousel3";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import Main from "../../components/layout/Main";
 import "../../assets/css/hero-section.css";
 import "../../assets/css/sections.css";
@@ -37,47 +39,10 @@ import { Severty, ShowToast } from "../../helper/toast";
 import { PhoneNumberField } from "../../components/InputField";
 import useRequest from "../../hooks/useRequest";
 import apiPath from "../../constants/apiPath";
-import { useAppContext } from "../../context/AppContext";
-import moment from "moment";
-
-// Import images
-import BusinessWomImg from "../../assets/images/businesswoman-showing-her-smartphone-app-taxi-driver 1.png";
-import CheckImg from "../../assets/images/check-circle.png";
-import Newphone1Img from "../../assets/images/new phone img 2 .png";
-import Whyus2Img from "../../assets/images/iconoir_quote-solid.png";
-import Prouser from "../../assets/images/user.png";
-
-const LogoImg = "QVD";
-
-const responsiveSetting = {
-  0: {
-    items: 1,
-  },
-  600: {
-    items: 1.2,
-  },
-  1000: {
-    items: 2,
-  },
-  1200: {
-    items: 2,
-  },
-  1400: {
-    items: 2,
-  },
-};
-
-function formatBytes(bytes, decimals = 2) {
-  if (!+bytes) return "";
-
-  const k = 1024;
-  const dm = decimals < 0 ? 0 : decimals;
-  const sizes = ["Bytes", "KB", "MB", "GB", "TB"];
-
-  const i = Math.floor(Math.log(bytes) / Math.log(k));
-
-  return ` - ${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
-}
+import { processMediaInfo } from "../../helper/mediaHelper";
+import MediaDisplay from "./MediaDisplay";
+import BusinessWomImg from "../../assets/images/contact-support.png";
+import LogoImg from "../../assets/images/logo/header-logo.png";
 
 const { Panel } = Collapse;
 
@@ -85,12 +50,17 @@ function LandingIndex() {
   const navigate = useNavigate();
   const targetcontact = useRef(null);
   const targetFaq = useRef(null);
+  const heroSectionRef = useRef(null);
+  const ctaSectionRef = useRef(null); // CTA सेक्शन के लिए ref
+
   const { request } = useRequest();
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
   const [mediaInfo, setMediaInfo] = useState(null);
   const [error, setError] = useState(null);
+  const [linkValue, setLinkValue] = useState("");
 
+  const [isCtaVisible, setIsCtaVisible] = useState(false); // CTA सेक्शन की visibility के लिए state
   const smoothScroll = (target) => {
     target.scrollIntoView({ behavior: "smooth" });
   };
@@ -104,6 +74,32 @@ function LandingIndex() {
       smoothScroll(targetFaq.current);
     }
   };
+
+  const scrollToTop = () => {
+    if (heroSectionRef.current) {
+      heroSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  // Intersection Observer का उपयोग करके एनीमेशन को ट्रिगर करें
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          setIsCtaVisible(true);
+          observer.unobserve(entry.target); // एक बार दिखने के बाद observer को हटा दें
+        }
+      },
+      { threshold: 0.1 } // जब 10% हिस्सा दिखे
+    );
+
+    if (ctaSectionRef.current) {
+      observer.observe(ctaSectionRef.current);
+    }
+
+    return () => observer.disconnect(); // Cleanup
+  }, []);
 
   const onSubmit = (values) => {
     setLoading(true);
@@ -120,7 +116,13 @@ function LandingIndex() {
       onSuccess: (data) => {
         setLoading(false);
         if (data.success) {
-          setMediaInfo(data);
+          // API response को हमारे स्टैंडर्ड फॉर्मेट में प्रोसेस करें
+          console.log("data----->", data);
+          const processedData = processMediaInfo(data?.data?.data);
+          console.log("processedData----->", processedData);
+          if (processedData) {
+            setMediaInfo(processedData);
+          }
         } else {
           setError(data.error || "Could not process the video link.");
           ShowToast(data.error || "Could not process the video link.", Severty.ERROR);
@@ -154,6 +156,25 @@ function LandingIndex() {
     ShowToast("Your download has started!", Severty.SUCCESS);
   };
 
+  const handlePaste = async () => {
+    try {
+      const text = await navigator.clipboard.readText();
+      form.setFieldsValue({ link: text });
+      setLinkValue(text);
+    } catch (err) {
+      ShowToast("Failed to read from clipboard.", Severty.ERROR);
+    }
+  };
+
+  const handleClear = () => {
+    form.resetFields();
+    setLinkValue("");
+  };
+
+  const onFormValuesChange = (changedValues) => {
+    if (changedValues.link !== undefined) setLinkValue(changedValues.link);
+  };
+
   return (
     <Main>
       <>
@@ -163,10 +184,8 @@ function LandingIndex() {
             <Container>
               <Navbar.Brand onClick={() => navigate("/")} className="qvd-navbar-brand py-2">
                 <div className="qvd-logo-container">
-                  <div className="qvd-logo-icon">↓</div>
-                  <span className="qvd-logo-text">{LogoImg}</span>
+                  <img src={LogoImg} alt="Logo" className="qvd-logo" />
                 </div>
-                <span className="qvd-tagline">Quick Video Downloader</span>
               </Navbar.Brand>
               <Navbar.Toggle className="navbar-toggler" aria-controls="navbarSupportedContent" />
               <Navbar.Collapse id="navbarSupportedContent">
@@ -195,80 +214,80 @@ function LandingIndex() {
         </div>
 
         {/* Hero Section - FSMVID Style */}
-        <section className="hero-section">
+        <section className="hero-section" ref={heroSectionRef}>
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-12 col-lg-12">
                 <div className="hero-content">
                   {/* Hero Badge */}
                   <div className="hero-badge">
-                    <span>⚡ Free Online Downloader</span>
+                    <span>
+                      <span className="emoji">⚡</span> Free Quick Videos Downloader
+                    </span>
                   </div>
-
-                  {/* Main Title */}
-                  <h1 className="hero-title">
-                    Free Social Media
-                    <span className="highlight">Video Downloader</span>
-                  </h1>
 
                   {/* Subtitle */}
                   <p className="hero-subtitle">
-                    Download videos, images, and shorts from YouTube, TikTok, Facebook, Instagram, Twitter, and 15+ other platforms.
+                    Download videos, audios, images, highlights and shorts from YouTube, TikTok, Facebook, Instagram, Twitter, and 15+ other platforms.
                     <br />
                     Fast, secure, and completely free.
                   </p>
 
                   {/* Feature Grid */}
-                  <div className="hero-features-grid">
-                    <div className="hero-feature-item">
-                      <CheckCircleOutlined />
-                      <div>No registration required</div>
-                    </div>
-                    <div className="hero-feature-item">
-                      <CheckCircleOutlined />
-                      <div>100% free forever</div>
-                    </div>
-                    <div className="hero-feature-item">
-                      <CheckCircleOutlined />
-                      <div>High quality downloads</div>
-                    </div>
-                    <div className="hero-feature-item">
-                      <CheckCircleOutlined />
-                      <div>Multiple formats</div>
+                  <div className="hero-features-marquee">
+                    <div className="hero-features-track">
+                      {[...Array(2)].map((_, i) => (
+                        <React.Fragment key={i}>
+                          <div className="hero-feature-item">
+                            <CheckCircleOutlined />
+                            <div>No registration required</div>
+                          </div>
+                          <div className="hero-feature-item">
+                            <CheckCircleOutlined />
+                            <div>100% free forever</div>
+                          </div>
+                          <div className="hero-feature-item">
+                            <CheckCircleOutlined />
+                            <div>High quality downloads</div>
+                          </div>
+                          <div className="hero-feature-item">
+                            <CheckCircleOutlined />
+                            <div>Multiple formats</div>
+                          </div>
+                        </React.Fragment>
+                      ))}
                     </div>
                   </div>
 
                   {/* Download Form */}
                   <div className="hero-download-form">
-                    <Form form={form} onFinish={onSubmit}>
-                      <Form.Item name="link" rules={[{ required: true, message: "Please enter video URL" }]}>
-                        <Input placeholder="Enter Video URL" size="large" />
+                    <Form form={form} onFinish={onSubmit} onValuesChange={onFormValuesChange}>
+                      <Form.Item
+                        name="link"
+                        rules={[
+                          { required: true, message: "Please paste a media link!" },
+                          { type: "url", message: "Please enter a valid URL!" },
+                        ]}
+                      >
+                        <Input
+                          placeholder="Paste video link from YouTube, Instagram, TikTok..."
+                          size="large"
+                          prefix={<LinkOutlined style={{ color: "rgba(0,0,0,.25)" }} />}
+                          suffix={
+                            linkValue ? (
+                              <ClearOutlined onClick={handleClear} style={{ cursor: "pointer", color: "rgba(0,0,0,.45)" }} />
+                            ) : (
+                              <CopyOutlined onClick={handlePaste} style={{ cursor: "pointer", color: "rgba(0,0,0,.45)" }} />
+                            )
+                          }
+                        />
                       </Form.Item>
                       <Form.Item>
                         <Button type="primary" htmlType="submit" size="large" loading={loading} disabled={loading}>
-                          ▶ Process
+                          <DownloadOutlined /> Process
                         </Button>
                       </Form.Item>
                     </Form>
-                  </div>
-
-                  {/* Stats Grid */}
-                  <div className="hero-stats-grid">
-                    <div className="hero-stat-item">
-                      <SmileOutlined />
-                      <h5 className="stat-title">1M+</h5>
-                      <p className="stat-description">Happy Users</p>
-                    </div>
-                    <div className="hero-stat-item">
-                      <DownloadOutlined />
-                      <h5 className="stat-title">10M+</h5>
-                      <p className="stat-description">Downloads</p>
-                    </div>
-                    <div className="hero-stat-item">
-                      <CloudServerOutlined />
-                      <h5 className="stat-title">99.9%</h5>
-                      <p className="stat-description">Uptime</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -290,73 +309,7 @@ function LandingIndex() {
           </div>
         )}
 
-        {mediaInfo && !loading && (
-          <section className="results-section" style={{ padding: "40px 0", backgroundColor: "#f9fafb" }}>
-            <div className="container">
-              <Card>
-                <Row gutter={[24, 24]} align="middle">
-                  <Col xs={24} md={8}>
-                    <img
-                      // CORS समस्याओं से बचने के लिए प्रॉक्सी का उपयोग करें
-                      src={`${apiPath.baseURL}${apiPath.proxyImage}?url=${encodeURIComponent(mediaInfo.thumbnail)}`}
-                      alt={mediaInfo.title}
-                      style={{ width: "100%", borderRadius: "8px" }}
-                    />
-                  </Col>
-                  <Col xs={24} md={16}>
-                    <Typography.Title level={4}>{mediaInfo.title}</Typography.Title>
-                    <Typography.Text type="secondary">Platform: {mediaInfo.platform}</Typography.Text>
-                    {mediaInfo.media.filter((f) => f.vcodec && f.vcodec !== "none").length > 0 && (
-                      <>
-                        <Divider>Video Downloads</Divider>
-                        <Space wrap>
-                          {mediaInfo.media
-                            .filter((f) => f.vcodec && f.vcodec !== "none")
-                            .map((format, index) => (
-                              <Button key={`video-${index}`} type="primary" icon={<DownloadOutlined />} onClick={() => handleDownload(format.url, mediaInfo.title, format.format)}>
-                                {format.quality} ({format.format.toUpperCase()}){formatBytes(format.size)}
-                              </Button>
-                            ))}
-                        </Space>
-                      </>
-                    )}
-
-                    {mediaInfo.media.filter((f) => f.acodec && f.acodec !== "none" && (!f.vcodec || f.vcodec === "none")).length > 0 && (
-                      <>
-                        <Divider>Audio Downloads</Divider>
-                        <Space wrap>
-                          {mediaInfo.media
-                            .filter((f) => f.acodec && f.acodec !== "none" && (!f.vcodec || f.vcodec === "none"))
-                            .map((format, index) => (
-                              <Button key={`audio-${index}`} type="default" icon={<DownloadOutlined />} onClick={() => handleDownload(format.url, mediaInfo.title, format.format)}>
-                                {format.quality} ({format.format.toUpperCase()}){formatBytes(format.size)}
-                              </Button>
-                            ))}
-                        </Space>
-                      </>
-                    )}
-
-                    {mediaInfo.media.filter((f) => f.vcodec === "none" && f.acodec === "none").length > 0 && (
-                      <>
-                        <Divider>Image Downloads</Divider>
-                        <Space wrap>
-                          {mediaInfo.media
-                            .filter((f) => f.vcodec === "none" && f.acodec === "none")
-                            .map((format, index) => (
-                              <Button key={`image-${index}`} type="dashed" icon={<DownloadOutlined />} onClick={() => handleDownload(format.url, mediaInfo.title, format.format)}>
-                                {/* अगर एक से ज़्यादा इमेज हैं तभी नंबर दिखाएँ */}
-                                Image {mediaInfo.media.filter((f) => f.vcodec === "none" && f.acodec === "none").length > 1 ? index + 1 : ""} ({format.format.toUpperCase()}){formatBytes(format.size)}
-                              </Button>
-                            ))}
-                        </Space>
-                      </>
-                    )}
-                  </Col>
-                </Row>
-              </Card>
-            </div>
-          </section>
-        )}
+        {mediaInfo && !loading && <MediaDisplay mediaInfo={mediaInfo} handleDownload={handleDownload} />}
 
         {/* How It Works Section */}
         <section className="how-to-cards-section">
@@ -373,7 +326,7 @@ function LandingIndex() {
                     <LinkOutlined className="how-to-card-icon" />
                   </div>
                   <h5 className="how-to-card-title">Copy the URL</h5>
-                  <p className="how-to-card-description">Go to the social media post and copy the link of the video, photo, or Reel you want to download.</p>
+                  <p className="how-to-card-description">Go to the social media post and copy the link of the video, photo, audio or Reel you want to download.</p>
                 </div>
               </Col>
               <Col xs={24} md={8} className="how-to-card-col">
@@ -410,16 +363,23 @@ function LandingIndex() {
             </div>
             <Row gutter={[24, 24]} className="platform-grid" justify="center">
               {[
-                { name: "YouTube", icon: <YoutubeOutlined />, color: "#FF0000" },
-                { name: "TikTok", icon: <VideoCameraOutlined />, color: "#000000" },
-                { name: "Instagram", icon: <InstagramOutlined />, color: "#E4405F" },
-                { name: "Facebook", icon: <FacebookOutlined />, color: "#1877F2" },
-                { name: "Twitter", icon: <TwitterOutlined />, color: "#1DA1F2" },
+                { name: "Instagram", icon: <InstagramOutlined />, color: "#E4405F", popular: false },
+                { name: "Facebook", icon: <FacebookOutlined />, color: "#1877F2", popular: false },
+                { name: "Threads", icon: <RetweetOutlined />, color: "#000000" },
                 { name: "Pinterest", icon: <PinterestOutlined />, color: "#E60023" },
+                { name: "YouTube", icon: <YoutubeOutlined />, color: "#FF0000", popular: false },
+                { name: "Twitter", icon: <TwitterOutlined />, color: "#1DA1F2" },
+                { name: "LinkedIn", icon: <LinkedinOutlined />, color: "#0A66C2" },
+                { name: "Snapchat", icon: <SmileOutlined />, color: "#FFFC00" },
+                { name: "TikTok", icon: <PlayCircleOutlined />, color: "#000000" },
+                { name: "Douyin", icon: <VideoCameraOutlined />, color: "#000000" },
+                { name: "Tumblr", icon: <BoldOutlined />, color: "#36465D" },
+                { name: "Spotify", icon: <CustomerServiceOutlined />, color: "#1DB954" },
               ].map((platform) => (
                 <Col xs={12} sm={8} md={6} lg={4} key={platform.name} className="platform-col">
                   <div className="platform-card">
-                    <div className="platform-card-icon" style={{ color: platform.color }}>
+                    {platform.popular && <div className="platform-badge">Popular</div>}
+                    <div className="platform-card-icon" style={{ color: platform.color, textShadow: platform.name === "Snapchat" ? "0 0 2px #000" : "none" }}>
                       {platform.icon}
                     </div>
                     <h5 className="platform-card-name">{platform.name}</h5>
@@ -430,29 +390,20 @@ function LandingIndex() {
           </div>
         </section>
 
-        {/* Why Our Process is Better Section */}
-        <section className="process-section">
+        {/* Call to Action Section */}
+        <section className="cta-section" ref={ctaSectionRef}>
           <div className="container text-center">
-            <div className="process-stats-card">
-              <div className="headding">
-                <h4>Why Our Process is Better</h4>
-                <div className="bar" />
-                <span>We've simplified video downloading for maximum efficiency and safety.</span>
-              </div>
-              <Row justify="space-around" align="middle">
-                <Col xs={24} md={8} className="process-stat-item">
-                  <h2 className="stat-card-value">&lt;10s</h2>
-                  <p className="stat-card-label">Average processing time</p>
-                </Col>
-                <Col xs={24} md={8} className="process-stat-item">
-                  <h2 className="stat-card-value">100%</h2>
-                  <p className="stat-card-label">Success rate</p>
-                </Col>
-                <Col xs={24} md={8} className="process-stat-item">
-                  <h2 className="stat-card-value">0</h2>
-                  <p className="stat-card-label">Registration required</p>
-                </Col>
-              </Row>
+            <div className="cta-content animated-cta-new">
+              <RocketOutlined className={isCtaVisible ? "animated-rocket" : ""} />
+              <h2 className={isCtaVisible ? "text-focus-in" : ""}>Ready to Start Downloading?</h2>
+              <p className={isCtaVisible ? "text-focus-in" : ""} style={{ animationDelay: isCtaVisible ? "0.5s" : "0s" }}>
+                Experience the fastest and easiest way to save videos from your favorite platforms.
+                <br />
+                No limits, no waiting. Just pure downloading freedom.
+              </p>
+              <Button type="default" size="large" onClick={scrollToTop} className="cta-button">
+                Try QVD Now for Free!
+              </Button>
             </div>
           </div>
         </section>
@@ -491,7 +442,7 @@ function LandingIndex() {
                 <div className="feature-card">
                   <GlobalOutlined />
                   <h5>All Platforms</h5>
-                  <p>We support over 15 platforms, including all major social media sites.</p>
+                  <p>We support over 15+ platforms, including all major social media sites.</p>
                 </div>
               </Col>
             </Row>

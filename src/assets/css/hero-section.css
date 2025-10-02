@@ -19,6 +19,11 @@
 
 .hero-badge {
   margin-bottom: 30px;
+  /* Animation: Fade in and slide down */
+  opacity: 0;
+  transform: translateY(-20px);
+  /* The animation will start immediately (0s delay) and last 0.6s */
+  animation: fadeInUp 0.6s 0s ease-out forwards;
 }
 
 .hero-badge span {
@@ -32,17 +37,44 @@
   font-weight: 500;
 }
 
+/* Keyframe for the pulse animation */
+@keyframes pulse {
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+/* Apply the pulse animation to the emoji in the badge */
+.hero-badge .emoji {
+  display: inline-block; /* Needed for transform to work */
+  animation: pulse 2s ease-in-out infinite;
+}
+
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem); /* Responsive font size */
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Gradient text effect */
+  background: linear-gradient(135deg, #ffffff 60%, #c3c8f2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .hero-title .highlight {
   color: #4facfe;
   display: block;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-subtitle {
@@ -51,31 +83,64 @@
   margin: 0 auto 40px auto;
   max-width: 650px;
   line-height: 1.6;
+
+  /* Animation moved from hero-title */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s 0.3s ease-out forwards; /* Delayed to start after the badge */
 }
 
-.hero-features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+/* --- Marquee Animation for Features --- */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.hero-features-marquee {
   max-width: 800px;
   margin: 0 auto 40px auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-features-track {
+  display: flex;
+  gap: 15px;
+  /* Adjust animation duration for speed */
+  animation: marquee 20s linear infinite;
+}
+
+/* Pause animation on hover */
+.hero-features-marquee:hover .hero-features-track {
+  animation-play-state: paused;
 }
 
 .hero-feature-item {
   background: rgba(255, 255, 255, 0.1);
   padding: 15px;
   border-radius: 12px;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   font-size: 0.9rem;
+  flex-shrink: 0; /* Prevent items from shrinking */
+  width: 220px; /* Give items a fixed width */
 }
 
 .hero-feature-item:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.15);
+  /* "Ubhra hua" effect */
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* Ensure it's on top of other items */
 }
 
 .hero-feature-item .anticon {
@@ -127,42 +192,71 @@
   max-width: 700px;
   margin: 0 auto;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.8s 0.6s ease-out forwards;
 }
 
 .hero-download-form .ant-form {
   display: flex !important; /* Override antd's default layout styles */
   gap: 10px;
-  align-items: stretch;
+  align-items: center;
+  position: relative;
 }
 
 .hero-download-form .ant-form-item {
   flex: 1 1 auto; /* Allow input to grow */
   margin-bottom: 0;
+  position: relative;
 }
 
 .hero-download-form .ant-form-item:last-child {
   flex: 0 0 auto; /* Prevent button from growing */
 }
 
-.hero-download-form .ant-input-lg {
-  border-radius: 8px;
+.hero-download-form .ant-input-affix-wrapper {
+  border-radius: 12px !important;
   border: 2px solid #e0e0e0;
-  padding: 12px 16px;
-  height: 52px;
+  padding: 0 16px;
+  height: 56px;
+  background-color: #ffffff;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.hero-download-form .ant-input-affix-wrapper:focus-within {
+  background-color: rgba(255, 255, 255, 1);
+  border-color: #4facfe;
+  box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.2);
+}
+
+.hero-download-form .ant-input-lg {
+  background: transparent;
+  font-size: 1rem;
+  height: 100%;
+  padding-left: 12px;
 }
 
 .hero-download-form .ant-btn-primary {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  border: none;
-  border-radius: 8px;
-  padding: 0 24px;
+  /* border: none; */
+  border-radius: 12px;
+  padding: 0 15px !important; /* चौड़ाई थोड़ी कम कर दी है */
   font-weight: bold;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  height: 52px;
-  transition: transform 0.2s ease;
+  gap: 3px !important;
+  height: 56px !important; /* ऊंचाई इनपुट के बराबर कर दी है */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.hero-download-form .ant-btn-primary:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+  /* हॉवर पर बैकग्राउंड को थोड़ा गहरा कर दिया है */
+  background: linear-gradient(135deg, #3a9ce2 0%, #00d4e2 100%);
 }
 
 /* Responsive adjustments */
