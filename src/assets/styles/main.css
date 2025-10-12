@@ -3700,17 +3700,7 @@ span.icon-event-hh img {
   text-align: center;
 }
 
-.hdr-img-inner img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 85%;
-  height: 700px !important;
-  z-index: 1;
-  width: 100%;
-}
+
 
 .occasions-main_2 .engagement-owl {
   display: flex;
@@ -4080,27 +4070,7 @@ p.for-m {
   margin-bottom: 8px !important;
 }
 
-.business-hours h2,
-.about-page-main h2,
-.Social-links h2 {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
-  margin: 0;
-  padding-bottom: 15px;
-}
 
-.business-hours ul.sunday li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 49px;
-  padding-bottom: 20px;
-}
-
-.business-hours ul.sunday {
-  width: 50%;
-}
 
 ul.sunday li p {
   margin: 0px;
@@ -4124,12 +4094,6 @@ li.for-bold {
   font-weight: 600 !important;
 }
 
-.business-hours,
-.Social-links,
-.about-page-main {
-  border-bottom: 1px solid var(--Placeholder, #a7a7a7);
-  padding: 15px 0px 19px 0px;
-}
 
 .Social-Links-logo {
   display: flex;
@@ -4904,26 +4868,7 @@ body#body-bg {
   background: #f6f7fb;
 }
 
-.abouut-us-txxt {
-  padding-right: 131px;
-  text-align: justify;
-}
 
-.abouut-us-txxt h3 {
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 27px;
-  margin: 0;
-  padding-bottom: 20px;
-  color: #0d2444;
-}
-
-.abouut-us-txxt p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #0d2444;
-}
 
 .nosub-ccc {
   display: flex;
@@ -5834,131 +5779,8 @@ section.request-write-page {
   gap: 10px;
 }
 
-.event-list-budget-dis {
-  border: 1px solid #ededed;
-  box-shadow: 0px 0px 30px 0px #d3d1d840;
-  border-radius: 12px;
-  height: -moz-fit-content;
-  height: fit-content;
-  position: relative;
-}
 
-.add-sign-new {
-  position: sticky;
-  bottom: 0px;
-  top: 100%;
-  right: 0;
-  width: 70px;
-  left: 100%;
-  height: 70px;
-  border-radius: 50%;
-  background: #021c3f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
 
-.main-add-new-event-bttnn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  border-radius: 20px;
-  background: white;
-  box-shadow: 0px 8.3px 62.24px 0px #00000033;
-}
-
-.main-add-new-event-bttnn button {
-  border-radius: 12px;
-  display: grid;
-  place-content: center;
-  /* background: #F6F7FB; */
-  padding: 20px;
-  border: none;
-  box-shadow: none;
-  height: 100%;
-  width: 100%;
-}
-
-.main-add-new-event-bttnn button span.anticon.anticon-plus-circle {
-  font-size: 75px;
-  color: #021c3f;
-}
-
-.main-add-new-event-bttnn button p {
-  font-size: 35px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 29px;
-  padding-top: 29px;
-  color: #021c3f;
-}
-
-.event-type-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
-}
-
-.budget-and-guest {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #62a4df33;
-  border-radius: 0px 0px 11px 11px;
-  padding: 18px 20px;
-}
-
-.both-m-div {
-  padding: 15px;
-  padding-top: 25px;
-}
-
-.featured-type.featured-type-main-hfuashf {
-  top: 0;
-  left: 0;
-  width: fit-content;
-  height: 25px;
-}
-
-.featured-type.featured-type-main-hfuashf h3 {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 20px;
-}
-
-.event-type p,
-.event-type-date p {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 300;
-  margin: 0;
-}
-
-.event-type h3,
-.event-type-date h3 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 23px;
-  margin: 0;
-}
-
-.panel.panel-default.main-filter-btn-main-145 {
-  height: 1200px;
-  background: white;
-  margin-bottom: 20px;
-}
-
-.event-location {
-  color: #062550;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 button.ant-btn.ant-btn-default.dleltebutton-image-22 {
   width: 38px;
@@ -8018,15 +7840,8 @@ input.form-control {
   font-weight: 500 !important;
 }
 
-.headerResultOuter {
-  z-index: 99;
-}
 
-.headerSearch {
-  max-width: 350px;
-  width: 100%;
-  min-width: 800px;
-}
+
 
 a.headerResultMenu:last-child {
   border-bottom: 0px solid !important;
@@ -9047,12 +8862,7 @@ button.ant-btn.ant-btn-primary {
   object-fit: cover;
 }
 
-.abouut-us-txxt h4 {
-  font-size: 24px;
-  font-weight: 500 !important;
-  line-height: 38px;
-  color: #0d2444;
-}
+
 
 .wedding-main.category-imgs .birthday-new {
   width: 100%;
@@ -9232,11 +9042,6 @@ button.ant-btn.ant-btn-primary.float-right:hover,
   color: #062550 !important;
 }
 
-.main-divv-bggg img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
 
 input:-internal-autofill-selected {
   background-color: white !important;
@@ -10475,11 +10280,7 @@ li.ant-list-item.guest-list-name-all {
   align-items: center;
 }
 
-.headerSearch.d-none.d-lg-block input.form-control {
-  padding-left: 50px !important;
-  color: black !important;
-  font-weight: 500 !important;
-}
+
 
 .panel-heading.main-filter-btn-main-45 {
   display: flex;
@@ -11195,9 +10996,7 @@ span.edit-iconee button.ant-btn.ant-btn-default {
   color: #000;
   text-decoration: none;
 }
-.search-container input#headerSearch {
-  padding-left: 35px;
-}
+
 .ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light {
   min-width: 180px;
 }

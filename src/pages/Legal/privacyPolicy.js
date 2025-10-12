@@ -1,6 +1,5 @@
 import React from "react";
 import Main from "../../components/layout/Main";
-import "../../assets/css/legal.css";
 
 const PrivacyPolicy = () => {
   return (

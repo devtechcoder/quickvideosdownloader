@@ -1,27 +1,12 @@
-import React, { useRef } from "react";
-import { useNavigate } from "react-router";
+import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { HeaderSvg } from "../../assets/images/svg/svg";
-import { Navbar, Nav, Container, Accordion, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import lang from "../../helper/langHelper";
 
 function Header() {
   const navigate = useNavigate();
-  const targetcontact = useRef(null);
-  const targetFaq = useRef(null);
-
-  const smoothScroll = (target) => {
-    target.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleScrollContact = () => {
-    if (targetcontact.current) {
-      smoothScroll(targetcontact.current);
-    }
-  };
-  const handleScrollFaq = () => {
-    if (targetFaq.current) {
-      smoothScroll(targetFaq.current);
-    }
-  };
+  const { pathname } = useLocation();
 
   return (
     <>
@@ -37,21 +22,21 @@ function Header() {
             <Navbar.Toggle className="navbar-toggler" aria-controls="navbarSupportedContent" />
             <Navbar.Collapse id="navbarSupportedContent">
               <Nav className="ms-auto mb-2 mb-lg-0 qvd-nav">
-                <Nav.Link onClick={() => navigate("/")} className="nav-link">
+                <Nav.Link onClick={() => navigate("/")} className={`nav-link ${pathname === "/" ? "active" : ""}`}>
                   {lang("Home")}
                 </Nav.Link>
                 <NavDropdown title={lang("Platforms")} id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#platform/youtube">YouTube Downloader</NavDropdown.Item>
-                  <NavDropdown.Item href="#platform/tiktok">TikTok Downloader</NavDropdown.Item>
-                  <NavDropdown.Item href="#platform/instagram">Instagram Downloader</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate("/")}>YouTube Downloader</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate("/")}>TikTok Downloader</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate("/")}>Instagram Downloader</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#" className="nav-link">
+                <Nav.Link onClick={() => navigate("/blog")} className={`nav-link ${pathname === "/blog" ? "active" : ""}`}>
                   {lang("Blog")}
                 </Nav.Link>
-                <Nav.Link onClick={handleScrollFaq} className="nav-link">
+                <Nav.Link onClick={() => navigate("/faq")} className={`nav-link ${pathname === "/faq" ? "active" : ""}`}>
                   {lang("FAQ")}
                 </Nav.Link>
-                <Nav.Link onClick={handleScrollContact} className="nav-link">
+                <Nav.Link onClick={() => navigate("/contact")} className={`nav-link ${pathname === "/contact" ? "active" : ""}`}>
                   {lang("Contact")}
                 </Nav.Link>
               </Nav>

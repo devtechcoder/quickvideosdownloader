@@ -14,9 +14,7 @@ import {
   GlobalOutlined,
   SmileOutlined,
   DownloadOutlined,
-  CloudServerOutlined,
   RocketOutlined,
-  SafetyCertificateOutlined,
   RetweetOutlined,
   LinkOutlined,
   HighlightOutlined,
@@ -29,11 +27,7 @@ import {
 } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import { Navbar, Nav, Container, Accordion, NavDropdown } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Main from "../../components/layout/Main";
-import "../../assets/css/hero-section.css";
-import "../../assets/css/sections.css";
-import "../../assets/css/header-animations.css";
 import lang from "../../helper/langHelper";
 import { Severty, ShowToast } from "../../helper/toast";
 import useRequest from "../../hooks/useRequest";
@@ -41,7 +35,6 @@ import apiPath from "../../constants/apiPath";
 import { processMediaInfo } from "../../helper/mediaHelper";
 import MediaDisplay from "./MediaDisplay";
 import BusinessWomImg from "../../assets/images/contact-support.png";
-import LogoImg from "../../assets/images/logo/header-logo.png";
 import SupportSection from "../../sections/Auth/SupportSection";
 
 const { Panel } = Collapse;
@@ -183,7 +176,7 @@ function LandingIndex() {
                   {/* Hero Badge */}
                   <div className="hero-badge">
                     <span>
-                      <span className="emoji">⚡</span> Free Quick Videos Downloader
+                      <span className="emoji">⚡</span> Free clickXpert Videos Downloader
                     </span>
                   </div>
 
@@ -394,7 +387,7 @@ function LandingIndex() {
             <div className="headding">
               <h4>Why Choose Our Downloader?</h4>
               <div className="bar" />
-              <span>Here are a few reasons why QVD is the best choice for downloading videos.</span>
+              <span>Here are a few reasons why clickXpert is the best choice for downloading videos.</span>
             </div>
             <Row gutter={[32, 32]} justify="center">
               <Col xs={24} sm={12} md={6}>
@@ -458,21 +451,21 @@ function LandingIndex() {
                 <div className="headding text-center">
                   <h4>Frequently asked questions</h4>
                   <div className="bar" id="bar-1" />
-                  <span>Everything you need to know about QVD.</span>
+                  <span>Everything you need to know about clickXpert.</span>
                 </div>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("What is QVD?")}</Accordion.Header>
+                    <Accordion.Header className="freq-ask-qqq">{lang("What is clickXpert?")}</Accordion.Header>
                     <Accordion.Body>
                       {lang(
-                        "QVD is a free tool that allows you to download videos from multiple platforms like YouTube, Instagram, Facebook, Twitter, TikTok & 15+ other platforms in high quality, without watermarks or sign-ups."
+                        "clickXpert is a free tool that allows you to download videos from multiple platforms like YouTube, Instagram, Facebook, Twitter, TikTok & 15+ other platforms in high quality, without watermarks or sign-ups."
                       )}
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("Which platforms does QVD support?")}</Accordion.Header>
+                    <Accordion.Header className="freq-ask-qqq">{lang("Which platforms does clickXpert support?")}</Accordion.Header>
                     <Accordion.Body>
                       {lang("We support YouTube, Instagram, Facebook, Twitter/X, TikTok, and 15+ other platforms. Simply paste any video link from these platforms and download instantly!")}
                     </Accordion.Body>
@@ -480,20 +473,20 @@ function LandingIndex() {
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("Do I need to log in to use QVD?")}</Accordion.Header>
-                    <Accordion.Body>{lang("No, QVD does not require you to log in. You can download videos anonymously.")}</Accordion.Body>
+                    <Accordion.Header className="freq-ask-qqq">{lang("Do I need to log in to use clickXpert?")}</Accordion.Header>
+                    <Accordion.Body>{lang("No, clickXpert does not require you to log in. You can download videos anonymously.")}</Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("Is QVD free to use?")}</Accordion.Header>
-                    <Accordion.Body>{lang("Yes! QVD is completely free, with no hidden charges.")}</Accordion.Body>
+                    <Accordion.Header className="freq-ask-qqq">{lang("Is clickXpert free to use?")}</Accordion.Header>
+                    <Accordion.Body>{lang("Yes! clickXpert is completely free, with no hidden charges.")}</Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header className="freq-ask-qqq">{lang("Can I download videos from private accounts?")}</Accordion.Header>
-                    <Accordion.Body>{lang("No, QVD only allows downloading from public accounts due to platform privacy policies.")}</Accordion.Body>
+                    <Accordion.Body>{lang("No, clickXpert only allows downloading from public accounts due to platform privacy policies.")}</Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
               </div>

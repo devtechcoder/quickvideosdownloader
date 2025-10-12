@@ -149,6 +149,17 @@
   animation-delay: 0.5s;
 }
 
+.qvd-header .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
+
+/* Style for the active navigation link */
+.qvd-nav .nav-link.active {
+  color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1)) !important;
+  font-weight: 600;
+  position: relative;
+}
+
 /* --- Responsive --- */
 @media (max-width: 991.98px) {
   .qvd-nav .nav-link,
