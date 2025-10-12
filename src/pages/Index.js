@@ -1,3 +1,4 @@
 import LandingIndex from "./Auth/Index";
+import PrivacyPolicy from "./Legal/privacyPolicy";
 
-export { LandingIndex };
+export { LandingIndex, PrivacyPolicy };

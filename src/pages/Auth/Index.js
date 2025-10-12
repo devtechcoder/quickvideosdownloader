@@ -61,19 +61,6 @@ function LandingIndex() {
   const [linkValue, setLinkValue] = useState("");
 
   const [isCtaVisible, setIsCtaVisible] = useState(false); // CTA सेक्शन की visibility के लिए state
-  const smoothScroll = (target) => {
-    target.scrollIntoView({ behavior: "smooth" });
-  };
-  const handleScrollContact = () => {
-    if (targetcontact.current) {
-      smoothScroll(targetcontact.current);
-    }
-  };
-  const handleScrollFaq = () => {
-    if (targetFaq.current) {
-      smoothScroll(targetFaq.current);
-    }
-  };
 
   const scrollToTop = () => {
     if (heroSectionRef.current) {
@@ -187,41 +174,6 @@ function LandingIndex() {
   return (
     <Main>
       <>
-        {/* Fixed Header */}
-        <div className="qvd-header">
-          <Navbar bg="transparent" expand="lg" className="navbar-light p-0">
-            <Container>
-              <Navbar.Brand onClick={() => navigate("/")} className="qvd-navbar-brand py-2">
-                <div className="qvd-logo-container">
-                  <img src={LogoImg} alt="Logo" className="qvd-logo" />
-                </div>
-              </Navbar.Brand>
-              <Navbar.Toggle className="navbar-toggler" aria-controls="navbarSupportedContent" />
-              <Navbar.Collapse id="navbarSupportedContent">
-                <Nav className="ms-auto mb-2 mb-lg-0 qvd-nav">
-                  <Nav.Link onClick={() => navigate("/")} className="nav-link">
-                    {lang("Home")}
-                  </Nav.Link>
-                  <NavDropdown title={lang("Platforms")} id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#platform/youtube">YouTube Downloader</NavDropdown.Item>
-                    <NavDropdown.Item href="#platform/tiktok">TikTok Downloader</NavDropdown.Item>
-                    <NavDropdown.Item href="#platform/instagram">Instagram Downloader</NavDropdown.Item>
-                  </NavDropdown>
-                  <Nav.Link href="#" className="nav-link">
-                    {lang("Blog")}
-                  </Nav.Link>
-                  <Nav.Link onClick={handleScrollFaq} className="nav-link">
-                    {lang("FAQ")}
-                  </Nav.Link>
-                  <Nav.Link onClick={handleScrollContact} className="nav-link">
-                    {lang("Contact")}
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-        </div>
-
         {/* Hero Section - FSMVID Style */}
         <section className="hero-section" ref={heroSectionRef}>
           <div className="container">
@@ -430,7 +382,7 @@ function LandingIndex() {
                 No limits, no waiting. Just pure downloading freedom.
               </p>
               <Button type="default" size="large" onClick={scrollToTop} className="cta-button">
-                Try QVD Now for Free!
+                Try clickXpert Now for Free!
               </Button>
             </div>
           </div>

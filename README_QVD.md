@@ -72,7 +72,7 @@ src/
 
 ## Branding
 
-- **Brand Name**: QuickVideosDownload
+- **Brand Name**: clickXpert
 - **Logo**: QVD (stylized letters)
 - **Colors**: Modern gradient design
 - **Typography**: Clean, professional fonts
@@ -102,4 +102,4 @@ For support and questions, please contact the development team.
 
 ---
 
-**QuickVideosDownload** - Your ultimate multi-platform video downloader solution! 🎥✨
+**clickXpert** - Your ultimate multi-platform video downloader solution! 🎥✨

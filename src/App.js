@@ -1,4 +1,4 @@
-import { LandingIndex } from "./pages/Index";
+import { LandingIndex, PrivacyPolicy } from "./pages/Index";
 
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
@@ -10,7 +10,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import Loader from "./components/Loader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Privacy from "./pages/Auth/Privacy";
 import Terms from "./pages/Auth/Terms";
 import { Analytics } from "@vercel/analytics/react";
 window.Buffer = window.Buffer || require("buffer").Buffer;
@@ -36,7 +35,7 @@ const AppRoutes = () => {
     <>
       <Routes>
         <Route path="/" element={<LandingIndex />} />
-        <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-condition" element={<Terms />} />
       </Routes>
     </>
