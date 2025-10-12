@@ -1,4 +1,4 @@
-import { Auth } from "./pages/Auth/Index_new";
+import { LandingIndex } from "./pages/Index";
 
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
@@ -10,8 +10,6 @@ import ScrollToTop from "./components/ScrollToTop";
 import Loader from "./components/Loader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AboutUsPage from "./pages/Auth/AboutUs";
-import HomeGallary from "./pages/Auth/HomeGallary";
 import Privacy from "./pages/Auth/Privacy";
 import Terms from "./pages/Auth/Terms";
 
@@ -36,12 +34,9 @@ const AppRoutes = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Auth />} />
-        <Route path="/signup" element={<Auth />} />
-        <Route path="/aboutUs" element={<AboutUsPage />} />
+        <Route path="/" element={<LandingIndex />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/terms-condition" element={<Terms />} />
-        <Route path="/home-gallary" element={<HomeGallary />} />
       </Routes>
     </>
   );

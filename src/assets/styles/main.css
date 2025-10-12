@@ -12030,3 +12030,193 @@ button#togglebutton {
   text-align: center;
   color: white;
 }
+
+/* ===============================================
+   Media Display Section (results-section) Styles
+   =============================================== */
+
+/* सेक्शन के लिए बेस स्टाइल */
+.results-section {
+  padding: 40px 20px; /* मोबाइल पर थोड़ी पैडिंग */
+  background-color: #f9fafb;
+  overflow-x: hidden; /* हॉरिजॉन्टल ओवरफ्लो को रोकें */
+}
+
+/* कार्ड के लिए एनिमेशन और स्टाइल */
+.results-section .ant-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  /* एंट्री एनिमेशन */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* कार्ड पर होवर इफ़ेक्ट */
+.results-section .ant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* एनिमेशन की-फ्रेम्स */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* थंबनेल इमेज के लिए स्टाइल */
+.results-section .ant-col-md-8 {
+  overflow: hidden; /* इमेज ज़ूम को कंटेनर के अंदर रखने के लिए */
+  border-radius: 8px;
+}
+
+.results-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* इमेज पर होवर ज़ूम इफ़ेक्ट */
+.results-section .ant-card:hover img {
+  transform: scale(1.05);
+}
+
+/* टाइटल और टेक्स्ट के लिए स्टाइल */
+.results-section .ant-typography-title {
+  font-weight: 600;
+}
+
+/* डाउनलोड बटन ग्रुप */
+.download-button-group {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px; /* मोबाइल पर रैप होने पर स्पेस के लिए */
+}
+
+/* ड्रॉपडाउन बटन */
+.download-button-group .ant-dropdown-trigger {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  z-index: 2 !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  transition: filter 0.3s ease;
+  color: white !important; /* टेक्स्ट का रंग सफ़ेद करें */
+}
+
+/* बटन के टेक्स्ट का रंग सफ़ेद करने के लिए */
+.download-button-group .ant-btn-primary span {
+  color: white !important;
+}
+
+/* डाउनलोड एक्शन बटन */
+.download-button-group .download-action-btn {
+  background: linear-gradient(135deg, #6a82fb 0%, #7b50ac 100%) !important;
+  border: none !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  margin-left: -1px !important; /* बॉर्डर को ओवरलैप करने के लिए */
+  transition: filter 0.3s ease;
+  color: white !important; /* टेक्स्ट का रंग सफ़ेद करें */
+}
+
+/* ड्रॉपडाउन बटन पर होवर इफ़ेक्ट हटाने के लिए */
+.download-button-group .ant-dropdown-trigger:hover,
+.download-button-group .ant-dropdown-trigger:focus {
+  filter: brightness(1.1);
+}
+
+/* डाउनलोड बटन पर होवर इफ़ेक्ट */
+.download-button-group .download-action-btn:hover {
+  filter: brightness(1.2);
+}
+
+/* ऑडियो ड्रॉपडाउन के लिए विशेष स्टाइल (अगर प्राइमरी से अलग दिखाना हो) */
+.download-button-group .audio-dropdown-btn {
+  background: linear-gradient(135deg, #5a6a9d 0%, #6a4e8f 100%) !important;
+}
+
+/* प्राइमरी बटन पर होवर/फोकस इफ़ेक्ट */
+.download-button-group .ant-btn-primary:hover,
+.download-button-group .ant-btn-primary:focus {
+  z-index: 3;
+}
+
+/* ===============================================
+   रिस्पॉन्सिव डिज़ाइन (Media Queries)
+   =============================================== */
+
+/* टैबलेट और डेस्कटॉप (768px और उससे अधिक) */
+@media (min-width: 768px) {
+  .results-section {
+    padding: 60px 0 !important;
+  }
+
+  .results-section .ant-card-body {
+    padding: 32px; /* बड़े स्क्रीन पर अधिक पैडिंग */
+  }
+}
+
+/* मोबाइल (767px और उससे कम) */
+@media (max-width: 767px) {
+  .results-section .ant-card-body {
+    padding: 20px !important; /* मोबाइल पर कम पैडिंग */
+  }
+
+  .results-section .ant-col-md-16 {
+    text-align: center !important; /* मोबाइल पर कंटेंट को सेंटर में करें */
+  }
+
+  .results-section .ant-space {
+    justify-content: center !important; /* स्पेस कंपोनेंट के आइटम्स को सेंटर में करें */
+  }
+}
+
+/* Process Button Group Styles */
+.process-button-group .ant-form {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.process-button-group .input-wrapper {
+  flex-grow: 1 !important;
+}
+
+.process-button-group .ant-input-affix-wrapper {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  height: 50px !important; /* Match button height */
+  border-right: none !important;
+}
+
+.process-button-group .ant-input {
+  height: 48px !important;
+}
+
+.process-button-group .ant-form-item-control-input {
+  min-height: 50px !important;
+}
+
+.process-button-group .ant-btn-primary {
+  height: 50px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  background: linear-gradient(135deg, #6a82fb 0%, #7b50ac 100%) !important;
+  border: none !important;
+  transition: filter 0.3s ease;
+  color: white !important;
+  margin-left: -1px;
+  z-index: 2;
+}
+
+.process-button-group .ant-btn-primary:hover {
+  filter: brightness(1.2);
+  color: white !important;
+}

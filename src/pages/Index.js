@@ -1,3 +1,3 @@
-import Auth from "./Auth/Index";
+import LandingIndex from "./Auth/Index";
 
-export { Auth };
+export { LandingIndex };
