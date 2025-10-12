@@ -65,20 +65,20 @@
 ### 🔄 In Progress
 
 - [ ] Update main Index_new.js to use FSMVID clone
-- [ ] Update brand name from FSMVID to "clickXpert"
+- [ ] Update brand name from FSMVID to "clipXpert"
 - [ ] Test responsive design
 - [ ] Verify download functionality
 
 ### 📋 Next Steps
 
 1. **Replace Index_new.js** with FSMVID clone content
-2. **Update brand name** from FSMVID to "clickXpert"
+2. **Update brand name** from FSMVID to "clipXpert"
 3. **Test the application** to ensure everything works
 4. **Fine-tune styling** to match original design
 
 ## 🎯 **Brand Updates Required**
 
-- Change "FSMVID" to "clickXpert"
+- Change "FSMVID" to "clipXpert"
 - Update all text references and meta information
 - Maintain consistent branding throughout
 - Update logo and favicon if needed

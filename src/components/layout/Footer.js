@@ -64,9 +64,9 @@ function Footer() {
         </Row>
         <div className="footer-bottom">
           <p>
-            &copy; {new Date().getFullYear()} clickXpert {lang("All Rights Reserved.")}
+            &copy; {new Date().getFullYear()} clipXpert {lang("All Rights Reserved.")}
           </p>
-          <p>{lang("clickXpert is not affiliated with any of the social media platforms mentioned.")}</p>
+          <p>{lang("clipXpert is not affiliated with any of the social media platforms mentioned.")}</p>
         </div>
       </div>
     </AntFooter>

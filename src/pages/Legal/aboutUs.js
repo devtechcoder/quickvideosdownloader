@@ -9,17 +9,17 @@ const AboutUs = () => {
           <div className="row justify-content-center">
             <div className="col-12 col-md-10 col-lg-8">
               <div className="legal-header text-center">
-                <h1 className="mb-3">About ClickXpert</h1>
+                <h1 className="mb-3">About clipXpert</h1>
                 <p className="text-muted">Your favorite tool for downloading online media.</p>
               </div>
 
               <div className="legal-content mt-4 mt-md-5">
                 <p>
-                  Welcome to <strong>ClickXpert</strong>, your number one source for downloading videos from the internet. We're dedicated to giving you the very best tool, with a focus on speed,
+                  Welcome to <strong>clipXpert</strong>, your number one source for downloading videos from the internet. We're dedicated to giving you the very best tool, with a focus on speed,
                   reliability, and an excellent user experience.
                 </p>
                 <p>
-                  Founded with the goal of making online content more accessible, ClickXpert has come a long way from its beginnings. We believe that users should have the ability to save and enjoy
+                  Founded with the goal of making online content more accessible, clipXpert has come a long way from its beginnings. We believe that users should have the ability to save and enjoy
                   videos from their favorite platforms, whether for offline viewing, creative projects, or educational purposes.
                 </p>
 

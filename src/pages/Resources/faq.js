@@ -7,8 +7,8 @@ const { Panel } = Collapse;
 const sampleFaqs = [
   {
     id: "faq1",
-    question: "Is ClickXpert completely free to use?",
-    answer: "Yes, ClickXpert is 100% free. We do not charge any fees for downloading videos. Our service is supported by advertisements.",
+    question: "Is clipXpert completely free to use?",
+    answer: "Yes, clipXpert is 100% free. We do not charge any fees for downloading videos. Our service is supported by advertisements.",
   },
   {
     id: "faq2",
@@ -24,7 +24,7 @@ const sampleFaqs = [
   {
     id: "faq4",
     question: "Do I need to install any software or extension?",
-    answer: "No, you don't need to install anything. ClickXpert is a web-based tool that works directly in your browser. Just paste the video URL and click download.",
+    answer: "No, you don't need to install anything. clipXpert is a web-based tool that works directly in your browser. Just paste the video URL and click download.",
   },
   {
     id: "faq5",

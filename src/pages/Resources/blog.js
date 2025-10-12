@@ -35,7 +35,7 @@ const Blog = () => {
         <div className="container py-4 py-md-5">
           <div className="legal-header text-center mb-5">
             <h1 className="mb-3">Welcome to Our Blog</h1>
-            <p className="text-muted">Tips, tricks, and updates from the ClickXpert team.</p>
+            <p className="text-muted">Tips, tricks, and updates from the clipXpert team.</p>
           </div>
 
           <div className="row g-4">

@@ -176,7 +176,7 @@ function LandingIndex() {
                   {/* Hero Badge */}
                   <div className="hero-badge">
                     <span>
-                      <span className="emoji">⚡</span> Free clickXpert Videos Downloader
+                      <span className="emoji">⚡</span> Free clipXpert Videos Downloader
                     </span>
                   </div>
 
@@ -375,7 +375,7 @@ function LandingIndex() {
                 No limits, no waiting. Just pure downloading freedom.
               </p>
               <Button type="default" size="large" onClick={scrollToTop} className="cta-button">
-                Try clickXpert Now for Free!
+                Try clipXpert Now for Free!
               </Button>
             </div>
           </div>
@@ -387,7 +387,7 @@ function LandingIndex() {
             <div className="headding">
               <h4>Why Choose Our Downloader?</h4>
               <div className="bar" />
-              <span>Here are a few reasons why clickXpert is the best choice for downloading videos.</span>
+              <span>Here are a few reasons why clipXpert is the best choice for downloading videos.</span>
             </div>
             <Row gutter={[32, 32]} justify="center">
               <Col xs={24} sm={12} md={6}>
@@ -451,21 +451,21 @@ function LandingIndex() {
                 <div className="headding text-center">
                   <h4>Frequently asked questions</h4>
                   <div className="bar" id="bar-1" />
-                  <span>Everything you need to know about clickXpert.</span>
+                  <span>Everything you need to know about clipXpert.</span>
                 </div>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("What is clickXpert?")}</Accordion.Header>
+                    <Accordion.Header className="freq-ask-qqq">{lang("What is clipXpert?")}</Accordion.Header>
                     <Accordion.Body>
                       {lang(
-                        "clickXpert is a free tool that allows you to download videos from multiple platforms like YouTube, Instagram, Facebook, Twitter, TikTok & 15+ other platforms in high quality, without watermarks or sign-ups."
+                        "clipXpert is a free tool that allows you to download videos from multiple platforms like YouTube, Instagram, Facebook, Twitter, TikTok & 15+ other platforms in high quality, without watermarks or sign-ups."
                       )}
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("Which platforms does clickXpert support?")}</Accordion.Header>
+                    <Accordion.Header className="freq-ask-qqq">{lang("Which platforms does clipXpert support?")}</Accordion.Header>
                     <Accordion.Body>
                       {lang("We support YouTube, Instagram, Facebook, Twitter/X, TikTok, and 15+ other platforms. Simply paste any video link from these platforms and download instantly!")}
                     </Accordion.Body>
@@ -473,20 +473,20 @@ function LandingIndex() {
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("Do I need to log in to use clickXpert?")}</Accordion.Header>
-                    <Accordion.Body>{lang("No, clickXpert does not require you to log in. You can download videos anonymously.")}</Accordion.Body>
+                    <Accordion.Header className="freq-ask-qqq">{lang("Do I need to log in to use clipXpert?")}</Accordion.Header>
+                    <Accordion.Body>{lang("No, clipXpert does not require you to log in. You can download videos anonymously.")}</Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header className="freq-ask-qqq">{lang("Is clickXpert free to use?")}</Accordion.Header>
-                    <Accordion.Body>{lang("Yes! clickXpert is completely free, with no hidden charges.")}</Accordion.Body>
+                    <Accordion.Header className="freq-ask-qqq">{lang("Is clipXpert free to use?")}</Accordion.Header>
+                    <Accordion.Body>{lang("Yes! clipXpert is completely free, with no hidden charges.")}</Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
                 <Accordion>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header className="freq-ask-qqq">{lang("Can I download videos from private accounts?")}</Accordion.Header>
-                    <Accordion.Body>{lang("No, clickXpert only allows downloading from public accounts due to platform privacy policies.")}</Accordion.Body>
+                    <Accordion.Body>{lang("No, clipXpert only allows downloading from public accounts due to platform privacy policies.")}</Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
               </div>

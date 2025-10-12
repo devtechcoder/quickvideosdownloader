@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
 
               <div className="legal-content mt-4 mt-md-5">
                 <p>
-                  Welcome to <strong>ClickXpert</strong>. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when
+                  Welcome to <strong>clipXpert</strong>. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when
                   you visit our website. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
                 </p>
 
@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
                 <h3 className="mt-4">6. Contact Us</h3>
                 <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
                 <p>
-                  <strong>Email:</strong> support@clickxpert.com
+                  <strong>Email:</strong> support@clipXpert.com
                 </p>
               </div>
             </div>

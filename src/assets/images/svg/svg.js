@@ -9,7 +9,7 @@ const HeaderSvg = () => {
           </linearGradient>
         </defs>
         <text x="20" y="100" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="800" fill="url(#g1)">
-          clickXpert
+          clipXpert
         </text>
       </svg>
     </>

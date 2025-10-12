@@ -15,7 +15,7 @@ const TermCondition = () => {
 
               <div className="legal-content mt-4 mt-md-5">
                 <p>
-                  Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the <strong>ClickXpert</strong> website (the "Service") operated by us.
+                  Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the <strong>clipXpert</strong> website (the "Service") operated by us.
                 </p>
                 <p>
                   Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the
@@ -33,10 +33,10 @@ const TermCondition = () => {
                 </p>
 
                 <h3 className="mt-4">2. Links To Other Web Sites</h3>
-                <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by ClickXpert.</p>
+                <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by clipXpert.</p>
                 <p>
-                  ClickXpert has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and
-                  agree that ClickXpert shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on
+                  clipXpert has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and
+                  agree that clipXpert shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on
                   any such content, goods or services available on or through any such web sites or services.
                 </p>
 
