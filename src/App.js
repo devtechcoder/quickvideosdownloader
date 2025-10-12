@@ -12,7 +12,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Privacy from "./pages/Auth/Privacy";
 import Terms from "./pages/Auth/Terms";
-
+import { Analytics } from "@vercel/analytics/react";
 window.Buffer = window.Buffer || require("buffer").Buffer;
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
             <ScrollToTop />
             <ToastContainer closeOnClick={false} />
             <AppRoutes />
+            <Analytics />
           </BrowserRouter>
         </Suspense>
       </AppContextProvider>
