@@ -36,6 +36,8 @@ import { processMediaInfo } from "../../helper/mediaHelper";
 import MediaDisplay from "./MediaDisplay";
 import BusinessWomImg from "../../assets/images/contact-support.png";
 import SupportSection from "../../sections/Auth/SupportSection";
+import AboutSection from "./AboutSection";
+import WorkProcess from "./workProcess";
 
 const { Panel } = Collapse;
 
@@ -422,6 +424,8 @@ function LandingIndex() {
           </div>
         </section>
 
+        <AboutSection />
+        <WorkProcess />
         {/* Contact Section */}
         <section id="contactus" className="bg-img2" ref={targetcontact}>
           <div className="container for-width">
