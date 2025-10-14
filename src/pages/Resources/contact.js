@@ -1,9 +1,16 @@
 import React from "react";
 import Main from "../../components/layout/Main";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <Main>
+      <Helmet>
+        <title>Contact Us - clipXpert</title>
+        <meta name="description" content="Get in touch with the clipXpert team. We'd love to hear from you. Reach out with any questions, feedback, or support requests." />
+        <meta name="keywords" content="contact clipxpert, clipxpert support, feedback, help, video downloader contact" />
+        <link rel="canonical" href="https://clipxpert.vercel.app/contact" />
+      </Helmet>
       <div className="legal-container contact-page">
         <div className="container py-4 py-md-5">
           <div className="legal-header text-center mb-5">

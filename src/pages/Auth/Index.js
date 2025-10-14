@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { Input, Button, Row, Col, Space, Collapse, Form, Checkbox, Card, Typography, Spin, Alert } from "antd";
 import {
   CheckCircleOutlined,
@@ -169,6 +170,15 @@ function LandingIndex() {
   return (
     <Main>
       <>
+        <Helmet>
+          <title>clipXpert - Free Social Media Video Downloader</title>
+          <meta
+            name="description"
+            content="Download videos, images, and shorts from YouTube, TikTok, Facebook, Instagram, Twitter, and 15+ other platforms with clipXpert. Fast, secure, and completely free."
+          />
+          <meta name="keywords" content="video downloader, free video downloader, social media downloader, youtube downloader, tiktok downloader, instagram downloader, clipxpert" />
+          <link rel="canonical" href="https://clipxpert.vercel.app/" />
+        </Helmet>
         {/* Hero Section - FSMVID Style */}
         <section className="hero-section" ref={heroSectionRef}>
           <div className="container">

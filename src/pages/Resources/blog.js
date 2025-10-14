@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "../../components/layout/Main";
+import { Helmet } from "react-helmet-async";
 
 const samplePosts = [
   {
@@ -31,6 +32,12 @@ const samplePosts = [
 const Blog = () => {
   return (
     <Main>
+      <Helmet>
+        <title>clipXpert Blog - Tips, Tricks, and Updates</title>
+        <meta name="description" content="Explore articles, tutorials, and updates from the clipXpert team. Learn tips and tricks for downloading and managing online videos." />
+        <meta name="keywords" content="clipxpert blog, video download tips, youtube tutorial, instagram tricks, video downloader guide" />
+        <link rel="canonical" href="https://clipxpert.vercel.app/blog" />
+      </Helmet>
       <div className="legal-container blog-page">
         <div className="container py-4 py-md-5">
           <div className="legal-header text-center mb-5">

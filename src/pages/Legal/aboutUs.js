@@ -1,5 +1,6 @@
 import React from "react";
 import Main from "../../components/layout/Main";
+import { Helmet } from "react-helmet-async";
 
 import visionImgae from "../../assets/images/png/vision.png";
 import missionImage from "../../assets/images/png/mission.png";
@@ -9,6 +10,12 @@ import responsibilityImage from "../../assets/images/png/responsibility.png";
 const AboutUs = () => {
   return (
     <Main>
+      <Helmet>
+        <title>About Us - clipXpert</title>
+        <meta name="description" content="Learn about the mission and vision behind clipXpert. Discover the team dedicated to providing the best free online video downloading tool." />
+        <meta name="keywords" content="about clipxpert, clipxpert team, video downloader mission" />
+        <link rel="canonical" href="https://clipxpert.vercel.app/about-us" />
+      </Helmet>
       <div className="legal-container">
         <div className="container py-4 py-md-5">
           <div className="row justify-content-center">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Collapse } from "antd";
 import Main from "../../components/layout/Main";
+import { Helmet } from "react-helmet-async";
 
 const { Panel } = Collapse;
 
@@ -36,6 +37,15 @@ const sampleFaqs = [
 const Faq = () => {
   return (
     <Main>
+      <Helmet>
+        <title>Frequently Asked Questions - clipXpert</title>
+        <meta
+          name="description"
+          content="Find answers to frequently asked questions about clipXpert. Learn about supported platforms, video quality, legality, and how to use our free video downloader."
+        />
+        <meta name="keywords" content="clipxpert faq, video downloader faq, frequently asked questions, clipxpert help" />
+        <link rel="canonical" href="https://clipxpert.vercel.app/faq" />
+      </Helmet>
       <div className="legal-container faq-page">
         <div className="container py-4 py-md-5">
           <div className="legal-header text-center mb-5">

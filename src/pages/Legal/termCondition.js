@@ -1,9 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Main from "../../components/layout/Main";
 
 const TermCondition = () => {
   return (
     <Main>
+      <Helmet>
+        <title>Terms & Conditions - clipXpert</title>
+        <meta name="description" content="Read the Terms and Conditions for using the clipXpert service. Understand your rights and responsibilities when using our free video downloader." />
+        <meta name="keywords" content="terms and conditions, terms of service, clipxpert legal" />
+        <link rel="canonical" href="https://clipxpert.vercel.app/terms-and-conditions" />
+      </Helmet>
       <div className="legal-container">
         <div className="container py-4 py-md-5">
           <div className="row justify-content-center">

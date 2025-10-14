@@ -1,9 +1,19 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Main from "../../components/layout/Main";
 
 const PrivacyPolicy = () => {
   return (
     <Main>
+      <Helmet>
+        <title>Privacy Policy - clipXpert</title>
+        <meta
+          name="description"
+          content="Our Privacy Policy explains how clipXpert collects, uses, and protects your data when you use our free video downloader. We are committed to safeguarding your privacy."
+        />
+        <meta name="keywords" content="privacy policy, data protection, clipxpert privacy, user data" />
+        <link rel="canonical" href="https://clipxpert.vercel.app/privacy-policy" />
+      </Helmet>
       <div className="legal-container">
         <div className="container py-4 py-md-5">
           <div className="row justify-content-center">
